@@ -6,7 +6,7 @@ function requestApiAndGetData() {
   })
 }
 function calculateDateArray(end){
-  let sdt = new Date(start); // 2020년 03월 04일 부터 시작
+  let sdt = new Date(start); // 2020년 03월 04일 시작
   let edt = new Date(end);
   let dateDiff = Math.ceil((edt.getTime()-sdt.getTime())/(1000*3600*24));
 
