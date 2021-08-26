@@ -8,7 +8,7 @@
         <meta name="keywords" content="코로나 코어 Corona-Core">
         <meta name="viewport" content="width=device-width,initialscale=1, minimum-scale=1, maximum-scale=1, user-scaleable=no">
         <meta name="description" content="코로나 코어에서 각종 코로나 정보를 확인하세요!.">
-
+        
         <!-- SNS 공유 데이터 -->
         <meta property="og:title" content="코로나 코어">
         <meta property="og:description" content="코로나 코어에서 각종 코로나 정보를 확인하세요!."> 
@@ -16,11 +16,12 @@
         <meta property="og:image" content="02_img/icon/virus.png">
         <meta property="og:url" content="https://corona-core-kr.github.io/">
         
-        <!-- Fabicon [Chrome, Safari, IE] , [Firefox, Opera] -->
+        <!-- Favicon [Chrome, Safari, IE] , [Firefox, Opera] -->
         <link rel="shortcut icon" href="02_img/icon/virus.png" type="image/x-icon">
         <link rel="icon"          href="02_img/icon/virus.png" type="image/x-icon">
 
         <title>Corona Core</title>
+        
         <link rel="stylesheet" href="01_code/css/style.css">
         <link rel="stylesheet" href="01_code/css/detail.css">
         <link rel="stylesheet" href="01_code/css/menubar.css">
@@ -51,18 +52,6 @@
                 <h3 style="text-align:left" class="font1"> 코로나 코어 > HOME </h3>
             </div><hr>
 
-            <!--업데이트 내용-->
-            <div style="position: fixed; right: 20px; top:0px; bottom:10px; z-index: 4;">	
-                <details><summary>Corona Core 업데이트 내용</summary>
-                    <p align="middle">
-                        <iframe src="https://choiwonseok9.github.io/"
-                            width=300
-                            height=800 frameborder=0 framespacing=0 marginheight=0 marginwidth=0  vspace=0 scrolling = "">
-                        </iframe>
-                    </p>
-                </details>
-            </div>
-
             <div id="gray_box">
                 <!-- 01) 실시간 상황판 템플릿 -->
                 <script src="templates/board.js" type="text/javascript"></script>
@@ -73,9 +62,9 @@
                 <!-- 02) 각종 링크 슬라이더 -->
                 <div style="padding:0px; margin:0px; font-family:arial,helvetica,sans-serif,verdana,'Open Sans'">
                     <!-- Jssor Slider Start -->
+                    <script src="templates/JssorHTML.js"></script>
                     <script src="01_code/Img_Slider/js/jssor_slider-28.1.0.min.js"></script>
                     <script src="01_code/Img_Slider/js/jssor_slider.js"></script>
-                    <script src="templates/JssorHTML.js"></script>
                     <script>jssor_1_slider_init();</script>
                     <!-- Jssor Slider End -->
                 </div>
