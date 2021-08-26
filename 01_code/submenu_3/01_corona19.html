@@ -1,60 +1,31 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
 <head>
-<meta charset="utf-8"/>
-<meta name="description" content="Corona Information Site"/>
-<meta name="author" content="tlwns5598@gmail.com"/>
-<title>Corona Core</title>
-<link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/menubar.css">
-<link rel="stylesheet" href="방역.css">
-<style>
-	details {
-	  font: 14px "KoPub Batang", Calibri, sans-serif;
-	}
-
-	details > summary {
-	  padding: 2px 6px;
-
-	  background-color: #424242;
-	  box-shadow: 3px 3px 4px gray;
-	  cursor: pointer;
-	  color:white;
-	}
-
-	details > summary > div {
-	  font-weight: 400;
-	  background-color: #f5f5f5;
-	  color:black;
-	  padding:2px;
-	}
-
-	p{
-		color:#3D3D3D;
-		line-height: 170%;
-	}
-	.black_bold{
-		font-family:'KoPub Batang';
-		font-weight: 600;
-		color:blue;
-	}
-	.bold{
-		font-family:'KoPub Batang';
-		font-weight: 600;
-		color:red;
-	}
-
-	.float{
-		float:right;
-	}
-	.contents2{ 
-	padding: 10px;
-	min-height : 490px;
-	border : 1px solid gray;
-	}
-
-</style>
-
+	<!-- 기본 메타데이터 -->
+	<meta charset="utf-8"/> 
+	<meta name="description" content="Corona Information Site"/>
+	<meta name="author" content="tlwns5598@gmail.com" />
+	<meta name="keywords" content="코로나 코어 Corona-Core">
+	<meta name="viewport" content="width=device-width,initialscale=1, minimum-scale=1, maximum-scale=1, user-scaleable=no">
+	<meta name="description" content="코로나 19란?">
+	<title>Corona Core</title>
+	
+	<!-- SNS 공유용 메타데이터 -->
+	<meta property="og:title" content="코로나 코어 방역정보">
+	<meta property="og:description" content="코로나 19란?"> 
+	<meta property="og:type" content="website"> 
+	<meta property="og:image" content="../../02_img/home.jpg">
+	<meta property="og:url" content="http://corona-core.com/01_code/submenu_3/01_corona19.html">
+	
+	<!-- Favicon [Chrome, Safari, IE] , [Firefox, Opera] -->
+	<link rel="shortcut icon" href="../../02_img/icon/virus.png" type="image/x-icon">
+	<link rel="icon"          href="../../02_img/icon/virus.png" type="image/x-icon">
+	
+	<!-- css -->
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/menubar.css">
+	<link rel="stylesheet" href="quarantine.css">
+	<link rel="stylesheet" href="quarantine2.css">
 </head>
 <body id="zoom">
 <!-- 페이지 원클릭 상단이동 버튼-->
@@ -73,17 +44,6 @@
 		<h3 style="text-align:left" class="font1"> 방역정보 > 코로나 19 </h3>
 	</div>
 	<hr>
-
-	<div style="position: fixed; right: 20px; top:0px; bottom:10px; z-index: 4;">	<!--업데이트 내용-->
-		<details style=""><summary>Corona Core 업데이트 내용</summary>
-	
-		<iframe src="https://choiwonseok9.github.io/"     
-			width=300
-			height=800 frameborder=0 framespacing=0 marginheight=0 marginwidth=0  vspace=0 scrolling = "">
-		</iframe>
-	
-	</details>
-	</div>
 
 	<!-- 컨텐츠 박스 -->
 	<div id="outer_contents">
