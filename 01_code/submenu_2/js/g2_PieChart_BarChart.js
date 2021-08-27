@@ -1,4 +1,4 @@
-import {url} from '/utils/Data.js'
+import {url} from './utils/Data.js'
 
 let input = document.getElementById('input')
 let Plot_Button = document.getElementById('plot');
