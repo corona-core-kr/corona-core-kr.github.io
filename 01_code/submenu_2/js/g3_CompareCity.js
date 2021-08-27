@@ -1,4 +1,4 @@
-import {url} from './utils/Data.js'
+import {url} from './Data.js'
 const cityTag = document.getElementById('city')
 const addButton = document.getElementById('addButton');
 const cityTitle = document.querySelector('.cityMember');
@@ -7,24 +7,8 @@ let button = document.getElementById('but');
 let cityMember=[];
 
 const addEventListener1 = ()=>{
-  let isNotDuplicate=true;
-  cityTitle.childNodes.forEach(Dom=>{
-    if(Dom.innerHTML ===`${cityTag.value}`) {
-      alert('이미 존재하는 도시입니다');
-      isNotDuplicate = false;
-    }
-  })
-
-  if(isNotDuplicate) {
-    cityTitle.insertAdjacentHTML('beforeend', `<button type="button" id="${cityTag.value}" class="m-1 btn btn-primary">${cityTag.value}</button>`);
-    document.querySelector(`#${cityTag.value}`).addEventListener('click', (e) => {
-      if (confirm('삭제하시겠습니까?')) {
-        e.path[0].remove();
-        cityMember.splice(cityMember.indexOf(e.path[0].innerHTML), 1);
-      }
-    })
-    cityMember.push(cityTag.value)
-  }
+  cityTitle.insertAdjacentHTML('beforeend',`<button type="button" class="m-1 btn btn-primary">${cityTag.value}</button>`);
+  cityMember.push(cityTag.value)
 }
 
 addButton.addEventListener('click',addEventListener1);
@@ -40,6 +24,8 @@ function getServerData() {
           return dfd.read_csv(`${url}${date}.csv`)
         }
       ));         //모든 데이터 값 읽어오기
+
+      console.log(datas);
 
       addCityIndex(datas,cityMember,cityIndex); //해당 지역을 가진 index 찾기
       checkIndex(datas,cityIndex,totalContent); //해당 지역을 가진 인덱스마다의 객체의 프로퍼티인 배열에 값을 넣는다
