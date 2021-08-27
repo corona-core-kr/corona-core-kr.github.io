@@ -1,4 +1,4 @@
-import {url} from './Data.js'
+import {url} from 'utils/Data.js'
 
 const numberInput = document.getElementById('numberInput');
 
