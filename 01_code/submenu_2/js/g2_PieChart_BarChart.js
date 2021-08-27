@@ -111,7 +111,7 @@ $(document).ready(function() {
     var val = $(this).val();
     let result =(Unix_timestamp(val));
     document.querySelector('#div2').innerHTML= result;
-    dfd.read_csv(`http://coronacore.site/main/CoronaCore/01_code/submenu_2/Data/Date/${result.replace(/-/gi, '').slice(2, 8)}.csv`)
+    dfd.read_csv(`http://corona-core.com/01_code/submenu_2/Data/Date/${result.replace(/-/gi, '').slice(2, 8)}.csv`)
       .then(
         function (data) {
           const incDec_Length_Except_Sum = data.body__items__item__incDec.data.length - 1;
