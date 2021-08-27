@@ -1,4 +1,4 @@
-import {url} from 'utils/Data.js'
+import {url} from '/utils/Data.js'
 
 const lineButton = document.getElementById('lineButton')
 const barButton = document.getElementById('barButton')
