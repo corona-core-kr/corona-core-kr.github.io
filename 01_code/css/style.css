@@ -16,18 +16,14 @@
 }
 
 html{ 
-	width:100%; 
-	height: 100%; 
 	background-color: white;
 	/*	background-color : rgb(31,30,32); */
 }
 
 body { 
-	width:100%; 
-	height:2000px;
-	width:850px; 
 	background-color: white; 
 	margin:0 auto;
+	text-align: center;
 }
 a{text-decoration:none;}
 a>h2{color:black;}
@@ -78,21 +74,6 @@ a>h2{color:black;}
 
 #zoom{zoom:100%}
 
-/* footer CSS*/
-.footer{
-	padding:10px;
-	text-align:center;
-}
-.footer_mid{
-	background-color:#eeeeee;
-	border:1px solid;
-	padding:25px;
-}
-.footer_inside{
-	padding:10px;
-	border:1px gray solid;
-	background-color: white;
-}
 
 .menu_description{
 	border:solid black 1px;
@@ -116,6 +97,8 @@ a>h2{color:black;}
 	text-align: center;
 }
 #white_box{
+	display: inline-block;
+	width:40%;
 	background-color:white;
 	border:1px solid;
 	margin:15px;
@@ -128,18 +111,6 @@ a>h2{color:black;}
 	line-height: 2;
 }
 
-/* 데이터 크롤링 - 거리두기 단계 부분 */
-.rounded {
-	height: 50px; width: 205px;
-	border-radius: 10px;
-}
-
-.rounded2 {
-	height: 50px; width: 205px;
-	border-radius: 0px;
-	text-align:center;
-}
-
 hr{
 	width:97.4%;
 }
@@ -149,4 +120,30 @@ hr{
 	position:fixed; 
 	left : 30px; 
 	bottom:10px;
+}
+
+
+/* footer CSS*/
+.footer{
+	display:inline-block;
+	width:41%;
+	padding:10px;
+	text-align:center;
+	margin-top:100px;
+	margin-bottom:100px;
+}
+.footer_mid{
+	background-color:#eeeeee;
+	border:1px solid;
+	padding:25px;
+}
+.footer_inside{
+	padding:10px;
+	border:1px gray solid;
+	background-color: white;
+}
+
+.siteMap{
+	margin-top: 100px;
+	margin-bottom: 100px;
 }

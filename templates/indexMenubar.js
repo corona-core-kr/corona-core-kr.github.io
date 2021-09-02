@@ -1,8 +1,17 @@
 function make_indexMenu(){
     let indexMenu = 
     `
+	<div id="outer_topMenu">
+		<div id="front">
+			<a href="index.html">Corona Core</a>
+		</div>
+		<div id="back">
+			<div id="dir">${dir_box}</div>
+		</div>
+	</div>
     <nav id="topMenu" >
 		<ul>
+			<li>|</li>
 			<li class="topMenuLi"> <a class="menuLink" >이용 안내</a>
 				<ul class="submenu">
 					<li><a href="01_code/submenu_1/01_notice.html" class="submenuLink">공지사항</a></li>

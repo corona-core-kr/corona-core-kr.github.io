@@ -1,0 +1,20 @@
+/* 데이터 크롤링 */
+#gray_box{
+    margin-top: 35px;
+}
+
+.inside_board{
+    display: inline-block;
+    position:relative;
+}
+
+.rounded {
+	height: 50px; width: 205px;
+	border-radius: 10px;
+}
+
+.rounded2 {
+	height: 50px; width: 205px;
+	border-radius: 0px;
+	text-align:center;
+}
