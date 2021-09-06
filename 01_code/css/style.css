@@ -31,13 +31,14 @@ a>h2{color:black;}
 /*타이틀*/
 .main_title{
 	position : relative;
+	margin-top:70px;
+	margin-bottom:130px;
 	padding-top: 70px;
 	height : 40px;
 	text-align : center;
 	font-family: "Times New Roman", Serif;
 	text-align: center;
 	font-size: 60px;
-
 }
 
 /* 실시간 상황판 */

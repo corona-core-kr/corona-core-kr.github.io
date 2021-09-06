@@ -8,8 +8,7 @@ function make_indexMenu(){
 		<div id="back">
 			<div id="dir">${dir_box}</div>
 		</div>
-	</div>
-    <nav id="topMenu" >
+		<nav id="topMenu" >
 		<ul>
 			<li>|</li>
 			<li class="topMenuLi"> <a class="menuLink" >이용 안내</a>
@@ -47,7 +46,7 @@ function make_indexMenu(){
 			</li>
 		</ul>
 	</nav>
-	<br><hr>
+	</div>
     `;
     document.write(indexMenu);
 }
