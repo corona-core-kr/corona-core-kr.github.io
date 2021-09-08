@@ -19,7 +19,7 @@
 .veil1{
     position: absolute;
     z-index: 1;
-    background-color: white;
+    /* background-color: white; */
     /* background-color: blue; */
     width:9.7%;
     height:30px;
@@ -30,7 +30,7 @@
 .veil2{
     position: absolute;
     z-index: 1;
-    background-color: white;
+    /* background-color: white; */
     /* background-color: red; */
     width:9.7%;
     height:30px;
