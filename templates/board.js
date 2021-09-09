@@ -9,7 +9,6 @@ function make_board(){
     <!-- 상황판 board 내부-->
     <div class="inside_board">
 
-
         <!--(00) 업데이트일-->
         <div style="width:800px;height:20px;">
             <div class="rounded" style="width:200px; height:25px;  float:right; margin-right:80px; margin-top : 7px;">
@@ -20,10 +19,8 @@ function make_board(){
             </div>
         </div>
 
-
         <!-- 상단 박스 3개 -->
         <div style="width:700px; height:150px; margin-left: 50px; margin-top:20px">
-
 
             <!-- (01) 국내확진자-->
             <div class="rounded" style="width:200px; height:120px;  float:left; background: rgb(212, 140, 81);">

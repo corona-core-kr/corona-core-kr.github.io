@@ -6,11 +6,13 @@
 	position:sticky;
 	top:0;
 	z-index: 99;
-	color:white;
+	color:red;
 	width:100%;
 	height:50px;
 	line-height:50px;
 	font-weight: bold;
+	margin-bottom:50px;
+	border: solid burlywood 4px;
 }
 #front{
 	position:absolute;
@@ -20,6 +22,7 @@
 #front>a{
 	left:10%;
 	display: block;
+	color:white;
 }
 #front>a:visited{color: white;}
 #front>a:hover  {color: orange;}
@@ -29,9 +32,9 @@
 	position:absolute;
 	background-color: #2d2d2d; 
 	right:3%;
+	width:350px;
 }
 #dir{
-	width:300px;
 	height:25px;
 	line-height:25px;
 	border-radius: 10px;
@@ -39,7 +42,6 @@
 	color:brown;
 	text-align: center;
 }
-
 
 #topMenu { 
 	height: 15px; /*topMenu의 높이를 30px로 설정(제대로 설정 안하면 아래 내용이 깨짐*/
@@ -75,7 +77,7 @@
 .menuLink, .submenuLink { 
 	text-decoration:none; /* a 태그의 꾸밈 효과 제거 */ 
 	display: block; /* a 태그의 클릭 범위를 넓힘 */ 
-	width: 205px; /* 기본 넓이를 150px로 설정 */ 
+	width: 190px; /* 기본 넓이를 150px로 설정 */ 
 	font-size: 15px; /* 폰트 사이즈 설정 */ 
 	font-weight: bold; /* 폰트를 굵게 설정 */ 
 	font-family: "Trebuchet MS", Dotum; /* 기본 폰트를 영어/한글 순서대로 설정 */ 
@@ -130,7 +132,7 @@
 .indexLink { 
 	text-decoration:none; /* a 태그의 꾸밈 효과 제거 */ 
 	display: inline; /* a 태그의 클릭 범위를 넓힘 */ 
-	width: 205px; /* 기본 넓이를 150px로 설정 */ 
+	width: 190px; /* 기본 넓이를 150px로 설정 */ 
 	font-size: 15px; /* 폰트 사이즈 설정 */ 
 	font-weight: bold; /* 폰트를 굵게 설정 */ 
 	font-family: "Trebuchet MS", Dotum; /* 기본 폰트를 영어/한글 순서대로 설정 */ 

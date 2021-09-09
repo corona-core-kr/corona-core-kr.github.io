@@ -30,18 +30,15 @@
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 </head>
 <body id="zoom">
+	
+	<a href="../../index.html">
+		<h2 class="main_title"> Corona Core </h2>
+	</a>
 
-	<!-- 홈페이지 -->
-	<a href="../../index.html"><h2 class="main_title"> Corona Core </h2></a><br>
 	<div class="mid">
-		<!-- 메뉴바 템플릿 -->
+		<!-- 서브페이지 메뉴 -->
+		<script> let dir_box="통계정보 > 지역별 확진자수 조회";</script>
 		<script src="../../templates/subpageMenubar.js" type="text/javascript"></script>
-		
-		<!-- 경로 박스 -->
-		<div class="stage">
-			<h3 style="text-align:left" class="font1"> 통계정보 > 지역별 확진자 숫자 조회</h3>
-		</div>
-		<hr>
 
 		<!-- 컨텐츠 박스 -->
 		<div class="contents" id="outer_contents">
@@ -58,7 +55,7 @@
 				<br>
 			<div id="graph_iframe">
 				<iframe src="kMap/g5_kmap.html"
-					width=780
+					width=1400
 					height=900>
 				</iframe>
 			</div>
