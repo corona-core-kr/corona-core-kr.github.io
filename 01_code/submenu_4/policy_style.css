@@ -1,12 +1,10 @@
 details {
   font: 15px "Open Sans", Calibri, sans-serif;
-}
-
-
-
-details{
 	font-weight:600;
+  width: 700px; 
+  margin: 0 auto; 
 }
+
 details > summary {
   padding: 2px 6px;
 
@@ -27,29 +25,34 @@ p{
 	color:#3D3D3D;
 	line-height: 170%;
 }
-
-
-
-#outer_contents{
-  background-color:#eeeeee;
-  border:1px solid;
-  margin:10px;
-}
+/* 
 #mid_box{
   background-color:#3D3D3D;
   border:1px solid;
   margin:10px;
   text-align:center;
   color:white;
+  margin: 0 auto; 
+} */
+
+#outer_contents{
+  background-color:#eeeeee;
+  border:1px solid;
+  margin: 0 auto; 
+  width:1300px;
+  padding-bottom:30px;
 }
+
 #inside_contents{
   background-color:white;
   border:1px solid;
-  margin:16px;
   padding : 10px;
   color:black;
   text-align:left;
   line-height: 1.5;
+  width:1100px;
+  margin: 0 auto; 
+
 }
 
 #sub_a{
@@ -58,3 +61,11 @@ p{
   color:red;
 }
 
+body{
+  text-align:center;
+}
+
+.mid{
+  text-align:center;
+  margin: 0 auto; 
+}

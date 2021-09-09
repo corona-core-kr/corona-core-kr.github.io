@@ -2,6 +2,8 @@
 #outer_contents{
 	background-color:#eeeeee;
 	border:1px solid;
+  width:1300px;
+  margin:0 auto;
 }
 #inside_contents{
 	background-color:#474747;
@@ -13,17 +15,16 @@
 	border:1px solid;
 }
 
-
-    details {
-        font: 15px "Open Sans", Calibri, sans-serif;
-      }
-      
-      details > summary {
-        padding: 2px 6px;
-        background-color: #2d2d2d;
-        color:white;
-        border: none;
-        box-shadow: 3px 3px 4px gray;
-        cursor: pointer;
-      }
+details {
+  font: 15px "Open Sans", Calibri, sans-serif;
+}
+  
+details > summary {
+  padding: 2px 6px;
+  background-color: #2d2d2d;
+  color:white;
+  border: none;
+  box-shadow: 3px 3px 4px gray;
+  cursor: pointer;
+}
 
