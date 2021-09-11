@@ -66,6 +66,8 @@ a>h2{color:black;}
 /*컨텐츠박스*/
 .contents{ 
 	margin : 10px;
+	margin : 0 auto;
+	width: 1300px;
 	padding: 20px;
 	min-height : 600px;
 	border : 1px solid gray;
