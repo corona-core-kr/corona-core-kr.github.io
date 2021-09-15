@@ -142,7 +142,7 @@ file = open('../crawler/n1_daily.html', 'w')
 file.write('<div class="daydata"><h1><p style ="color:rgb(255, 255, 255); font-size:22px;">+'+str(fine_dust)+'</p></h1></div>')      
 file.close()
 file = open('../crawler/n1_daily_mb.html', 'w')    
-file.write('<div class="daydata"><h1><p style ="color:rgb(255, 255, 255); font-size:15px;">+'+str(fine_dust)+'</p></h1></div>')      
+file.write('<div class="daydata"><h1><p style ="color:rgb(255, 255, 255); font-size:16.5px;">+'+str(fine_dust)+'</p></h1></div>')      
 file.close()
 
 
@@ -151,7 +151,7 @@ file = open('../crawler/n2_world.html', 'w')
 file.write('<div class="daydata"><h1>'+''+'<p style ="color:rgb(255, 255, 255); font-size:22px;">'+'+'+str(ultra_fine_dust)+'</p></h1>'+'</div>')
 file.close()
 file = open('../crawler/n2_world_mb.html', 'w')    
-file.write('<div class="daydata"><h1>'+''+'<p style ="color:rgb(255, 255, 255); font-size:15px;">'+'+'+str(ultra_fine_dust)+'</p></h1>'+'</div>')
+file.write('<div class="daydata"><h1>'+''+'<p style ="color:rgb(255, 255, 255); font-size:16.5px;">'+'+'+str(ultra_fine_dust)+'</p></h1>'+'</div>')
 file.close()
 
 #3 누적확진자
@@ -159,7 +159,7 @@ file = open('../crawler/n3_total.html', 'w')
 file.write('<div class="daydata">'+'<h2>'+'<p style ="color:rgb(255, 255, 255); font-size:22px;">'+str(result[0])+','+str(result[1])+'(+ '+str(result2[0])+')'+'</p></h2>'+'</div>')
 file.close()
 file = open('../crawler/n3_total_mb.html', 'w')    
-file.write('<div class="daydata">'+'<h2>'+'<p style ="color:rgb(255, 255, 255); font-size:15px;">'+str(result[0])+','+str(result[1])+'<br>(+ '+str(result2[0])+')'+'</p></h2>'+'</div>')
+file.write('<div class="daydata">'+'<h2>'+'<p style ="color:rgb(255, 255, 255); font-size:16.5px;">'+str(result[0])+','+str(result[1])+'<br>(+ '+str(result2[0])+')'+'</p></h2>'+'</div>')
 file.close()
 
 #4 사망자
@@ -167,7 +167,7 @@ file = open('../crawler/n4_dead.html', 'w')
 file.write('<div class="daydata">'+'<h1>'+'<p style ="color:rgb(255, 255, 255); font-size:22px;">'+str(dead)+str(dead_today)+'</p></h1>'+'</div>')
 file.close()
 file = open('../crawler/n4_dead_mb.html', 'w')    
-file.write('<div class="daydata">'+'<h1>'+'<p style ="color:rgb(255, 255, 255); font-size:15px;">'+str(dead)+'<br>'+str(dead_today)+'</p></h1>'+'</div>')
+file.write('<div class="daydata">'+'<h1>'+'<p style ="color:rgb(255, 255, 255); font-size:16.5px;">'+str(dead)+'<br>'+str(dead_today)+'</p></h1>'+'</div>')
 file.close()
 
 #5 격리해제
@@ -175,7 +175,7 @@ file = open('../crawler/n5_discharged.html', 'w')
 file.write('<div class="daydata">'+'<h2>'+'<p style ="color:rgb(255, 255, 255); font-size:22px;">'+str(tit)+str(tit2)+'</p></h2>'+'</div>')
 file.close()
 file = open('../crawler/n5_discharged_mb.html', 'w')    
-file.write('<div class="daydata">'+'<h2>'+'<p style ="color:rgb(255, 255, 255); font-size:15px;">'+str(tit)+'<br>'+str(tit2)+'</p></h2>'+'</div>')
+file.write('<div class="daydata">'+'<h2>'+'<p style ="color:rgb(255, 255, 255); font-size:16.5px;">'+str(tit)+'<br>'+str(tit2)+'</p></h2>'+'</div>')
 file.close()
 
 #6 치료중
@@ -183,7 +183,7 @@ file = open('../crawler/n6_under_treatment.html', 'w')
 file.write('<div class="daydata">'+'<h2>'+'<p style ="color:rgb(255, 255, 255); font-size:22px;">'+str(tit3)+str(tit4)+'</p></h2>'+'</div>')
 file.close()
 file = open('../crawler/n6_under_treatment_mb.html', 'w')    
-file.write('<div class="daydata">'+'<h2>'+'<p style ="color:rgb(255, 255, 255); font-size:15px;">'+str(tit3)+'<br>'+str(tit4)+'</p></h2>'+'</div>')
+file.write('<div class="daydata">'+'<h2>'+'<p style ="color:rgb(255, 255, 255); font-size:16.5px;">'+str(tit3)+'<br>'+str(tit4)+'</p></h2>'+'</div>')
 file.close()
 
 # 업데이트 날짜 text1
