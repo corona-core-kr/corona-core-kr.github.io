@@ -12,14 +12,14 @@ if (matchMedia("screen and (min-width: 769px)").matches){
 			<nav id="topMenu" >
 				<ul>
 					<li>|</li>
-					<li class="topMenuLi"> <a class="menuLink" >이용 안내</a>
+					<li class="topMenuLi"> <a class="menuLink">이용 안내</a>
 						<ul class="submenu">
 							<li><a href="01_code/submenu_1/01_notice.html" class="submenuLink">공지사항</a></li>
 							<li><a href="01_code/submenu_1/02_about_us.html" class="submenuLink">About Us</a></li>
 						</ul>
 					</li>
 					<li>|</li> <!-- 메뉴 사이에 바 모양 텍스트로 단락 구분  -->
-					<li class="topMenuLi"> <a class="menuLink" >통계 정보</a>
+					<li class="topMenuLi"> <a class="menuLink">통계 정보</a>
 						<ul class="submenu">
 							<li><a href="01_code/submenu_2/graph1.html" class="submenuLink">국내 누적 확진자 통계</a></li>
 							<li><a href="01_code/submenu_2/graph2.html" class="submenuLink">지역별 확진자 증가 추세</a></li>
@@ -29,7 +29,7 @@ if (matchMedia("screen and (min-width: 769px)").matches){
 						</ul>
 					</li>
 					<li>|</li>
-					<li class="topMenuLi"> <a class="menuLink" >방역 정보</a>
+					<li class="topMenuLi"> <a class="menuLink">방역 정보</a>
 						<ul class="submenu">
 							<li><a href="01_code/submenu_3/01_corona19.html" class="submenuLink">코로나 19</a></li>
 							<li><a href="01_code/submenu_3/02_vaccine.html" class="submenuLink">코로나 백신</a></li>
@@ -67,7 +67,7 @@ if (matchMedia("screen and (min-width: 1500px)").matches) {
 			<div id="dir">${dir_box}</div>
 		</div>
 
-		<nav id="topMenu" >
+		<nav id="topMenu">
 			<ul>
 				<li>|</li>
 				<li class="topMenuLi"> <a class="menuLink" >이용 안내</a>

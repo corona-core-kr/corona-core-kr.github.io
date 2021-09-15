@@ -43,7 +43,7 @@ hr{	width:97.4%;}
 }
 .mid{
 	margin:0px;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 }
 /*컨텐츠 박스*/
 .contents{ 
@@ -113,5 +113,8 @@ hr{	width:97.4%;}
 	}
 	.footer_inside{
 		padding:10px;
+	}
+	.mid{
+		overflow-x: hidden;
 	}
 }

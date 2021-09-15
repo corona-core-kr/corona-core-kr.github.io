@@ -3,11 +3,12 @@
 /*메인 메뉴*/
 #outer_topMenu{
 	background-color: #2d2d2d; 
-	position:sticky;
+	position: -webkit-sticky;
+	position: sticky;
 	top:0;
 	z-index: 99;
 	color:red;
-	width:100%;
+	width:99%;
 	height:50px;
 	line-height:50px;
 	font-weight: bold;
