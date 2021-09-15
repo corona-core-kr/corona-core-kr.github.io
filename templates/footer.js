@@ -4,12 +4,13 @@ function make_footer(){
     <div class="footer">
 	<div class="footer_mid">
 		<div class="footer_inside">
-			<br><br><h4 class="Jua" style="font-size:19px;"> - 주의사항 - </h4><br>
-
-			민간이 취합한 집계이므로<br> 
-			공식적인 근거 자료로 활용될 수 없으며<br><br>
-			본 사이트의 정보 사용으로 발생하는 문제의 책임은<br>
-			사용자에게 있으니 주의바랍니다.<br><br>
+			<br><br><h4 class="Jua" style="font-size:22px;"> - 주의사항 - </h4><br>
+			<div style="font-size:16px; font-weight:normal;">
+				<p>민간이 취합한 집계이므로</p>
+				<p>공식적인 자료로 활용될 수 없으며</p>
+				<p>사이트 정보 사용 문제의 책임은</p>
+				<p>사용자에게 있으니 주의바랍니다</p>
+			</div>
 			corona.core.kr@gmail.com<br><br>
 
 			<!-- SNS share buttons --> 
