@@ -1,3 +1,5 @@
+if (matchMedia("screen and (min-width: 768px)").matches) {
+
 function make_subpageMenu(){
     let subpageMenu = 
     ` 
@@ -54,5 +56,4 @@ function make_subpageMenu(){
     document.write(subpageMenu);
 }
 make_subpageMenu();
-    
-    
+}

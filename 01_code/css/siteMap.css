@@ -1,0 +1,47 @@
+
+.siteMap{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+#black_box{
+	background-color:#4F4F4F;
+	color:white;
+	border:1px solid;
+	padding:10px;
+	padding-left:10px;
+	line-height: 1.6;
+	text-align: center;
+}	
+
+#white_box{
+	text-align:center;
+	display: inline-block;
+	background-color:white;
+	border:1px solid;
+	padding : 10px;
+	color:black;
+	text-align:left;
+	line-height: 1.5;
+	width:90%;
+}
+.psedu_mid_box{
+	width:80%;
+	margin: 0 auto;
+}
+
+.psedu_mid_box>a{
+	display: inline-block;
+	width:100%;
+	background-color: white;
+	border-radius: 4px;
+	margin:3px;
+	font-family: Jua;
+	font-size:18px;
+	font-weight: 300;
+}
+
+@media (min-width: 780px){
+	#white_box{
+		width:730px;
+	}
+}

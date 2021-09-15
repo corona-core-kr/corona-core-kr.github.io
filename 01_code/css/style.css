@@ -41,31 +41,8 @@ a>h2{color:black;}
 	font-size: 60px;
 }
 
-/* 실시간 상황판 */
-.main_board{
-	position : relative;
-	padding-top: 3px;
-	height : 30px;
-	text-align : center;
-	font-family: "Times New Roman", Serif;
-	font-size: 30px;
-	color:rgb(255, 255, 255);
-	z-index : 2;
-	}
-
-
-/*경로 확인 박스, 현재 어느 경로에 존재하는지 확인 ex 정부정책 > 마스크 범위*/
-.stage{ 
-	margin : 10px;
-	padding: 20px;
-	height : 10px;
-	border : 1px solid gray;
-	padding-top: 0px;
-}
-
 /*컨텐츠박스*/
 .contents{ 
-	margin : 10px;
 	margin : 0 auto;
 	width: 1300px;
 	padding: 20px;
@@ -74,9 +51,6 @@ a>h2{color:black;}
 }
 
 .center{text-align:center;}
-
-#zoom{zoom:100%}
-
 
 .menu_description{
 	border:solid black 1px;
@@ -87,56 +61,34 @@ a>h2{color:black;}
 #gray_box{
 	background-color:#eeeeee;
 	border:1px solid;
-	padding:10px;
-	margin:10px;
+	padding:0px;
+	margin:0px;
 }
 
-#black_box{
-	background-color:#4F4F4F;
-	color:white;
-	border:1px solid;
-	padding:10px;
-	line-height: 1.6;
-	text-align: center;
-}
-#white_box{
-	display: inline-block;
-	width:40%;
-	background-color:white;
-	border:1px solid;
-	margin:15px;
-	padding : 10px;
-	color:black;
-	text-align:left;
-	line-height: 1.5;
-}
-.l_height{
-	line-height: 2;
-}
 
-hr{
-	width:97.4%;
-}
+.l_height{	line-height: 2;}
+
+hr{	width:97.4%;}
 
 #arrow{
 	display:none; 
 	position:fixed; 
 	left : 30px; 
 	bottom:10px;
+	opacity: 30%;
 }
 
-
-/* footer CSS*/
+/* footer*/
 .footer{
 	display:inline-block;
-	width:41%;
+	width:600px;
 	padding:10px;
 	text-align:center;
 	margin-top:100px;
 	margin-bottom:100px;
 }
 .footer_mid{
-	background-color:#eeeeee;
+	background-color:whitesmoke;
 	border:1px solid;
 	padding:25px;
 }
@@ -146,7 +98,18 @@ hr{
 	background-color: white;
 }
 
-.siteMap{
-	margin-top: 100px;
-	margin-bottom: 100px;
+/* 화면 너비 0 ~ 780px */
+@media (max-width: 780px){
+	/* footer CSS*/
+	.footer{
+		width:90%;
+		margin-bottom:100px;
+	}
+	.footer_mid{
+		border:1px solid;
+		padding:17x;
+	}
+	.footer_inside{
+		padding:10px;
+	}
 }

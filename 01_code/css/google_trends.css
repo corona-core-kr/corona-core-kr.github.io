@@ -15,25 +15,3 @@
     display: inline-block;
     text-align: center;
 }
-
-.veil1{
-    position: absolute;
-    z-index: 1;
-    /* background-color: white; */
-    /* background-color: blue; */
-    width:9.7%;
-    height:30px;
-    top:1650px;
-    left:60%;
-}
-
-.veil2{
-    position: absolute;
-    z-index: 1;
-    /* background-color: white; */
-    /* background-color: red; */
-    width:9.7%;
-    height:30px;
-    top:2218px;
-    left:60%;
-}
