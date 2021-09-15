@@ -25,15 +25,6 @@ p{
 	color:#3D3D3D;
 	line-height: 170%;
 }
-/* 
-#mid_box{
-  background-color:#3D3D3D;
-  border:1px solid;
-  margin:10px;
-  text-align:center;
-  color:white;
-  margin: 0 auto; 
-} */
 
 #outer_contents{
   background-color:#eeeeee;
@@ -61,9 +52,7 @@ p{
   color:red;
 }
 
-body{
-  text-align:center;
-}
+body{text-align:center;}
 
 .mid{
   text-align:center;

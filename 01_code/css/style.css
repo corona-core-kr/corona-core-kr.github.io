@@ -1,3 +1,15 @@
+/* 기초 CSS */
+body { 
+	background-color: white; 
+	margin:0 auto;
+	padding:0px;
+	text-align: center;
+}
+a{text-decoration:none;}
+a>h2{color:black;}
+hr{	width:97.4%;}
+
+/* Times New Roman 폰트 */
 .font1{ 
     font-family: "Times New Roman", Serif;
     text-align: center;
@@ -15,33 +27,25 @@
 	font-weight: 1000;
 }
 
-html{ 
-	background-color: white;
-	/*	background-color : rgb(31,30,32); */
-}
-
-body { 
-	background-color: white; 
-	margin:0 auto;
-	text-align: center;
-}
-a{text-decoration:none;}
-a>h2{color:black;}
-
-/*타이틀*/
+/* 타이틀 */
 .main_title{
 	position : relative;
+	margin:0px;
+	padding:0px;
 	margin-top:70px;
 	margin-bottom:130px;
-	padding-top: 70px;
+	padding-top: 50px;
 	height : 40px;
 	text-align : center;
 	font-family: "Times New Roman", Serif;
 	text-align: center;
 	font-size: 60px;
 }
-
-/*컨텐츠박스*/
+.mid{
+	margin:0px;
+	overflow-x: hidden;
+}
+/*컨텐츠 박스*/
 .contents{ 
 	margin : 0 auto;
 	width: 1300px;
@@ -52,10 +56,10 @@ a>h2{color:black;}
 
 .center{text-align:center;}
 
-.menu_description{
+/* .menu_description{
 	border:solid black 1px;
 	padding : 10px;
-}
+} */
 
 /*인덱스 메뉴 CSS*/	
 #gray_box{
@@ -65,10 +69,8 @@ a>h2{color:black;}
 	margin:0px;
 }
 
-
 .l_height{	line-height: 2;}
 
-hr{	width:97.4%;}
 
 #arrow{
 	display:none; 
