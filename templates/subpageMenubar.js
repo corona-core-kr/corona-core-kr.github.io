@@ -12,7 +12,6 @@ let subpageMenu =
 
 	<nav id="topMenu">
 		<ul> 
-		<li>|</li>
 			<li class="topMenuLi"> <a class="menuLink" >이용 안내</a> 
 				<ul class="submenu"> 
 					<li><a href="../submenu_1/01_notice.html" class="submenuLink">공지사항</a></li> 
