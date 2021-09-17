@@ -52,9 +52,8 @@ p{
   color:red;
 }
 
-body{text-align:center;}
-
 .mid{
   text-align:center;
   margin: 0 auto; 
+  /* border:solid 5px dashed rebeccapurple; */
 }

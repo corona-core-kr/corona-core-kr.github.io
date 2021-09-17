@@ -24,9 +24,9 @@
 	<!-- css -->
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/menubar.css">
-	<link rel="stylesheet" href="submenu_1.css">
-	<link rel="stylesheet" href="../../01_code/css/menubar_mobile.css">
-	
+	<link rel="stylesheet" href="../css/menubar_mobile.css">
+	<link rel="stylesheet" href="commentSection.css">
+	<link rel="stylesheet" href="subContents.css">
 </head>
 <body>
 	<!-- 모바일 메뉴바 -->
@@ -35,26 +35,30 @@
 	<a href="../../index.html">
 		<h2 class="main_title"> Corona Core </h2>
 	</a>
+	
+	<!-- 각 페이지 메뉴 -->
+	<script> let dir_box="이용안내 > About Us";</script>
+	<script src="../../templates/subpageMenubar.js" type="text/javascript"></script>
+	<script src="../../templates/supPageController.js" type="text/javascript"></script>
+
 
 	<div class="mid">
-		<!-- 서브페이지 메뉴 -->
-		<script> let dir_box="이용안내 > About Us";</script>
-		<script src="../../templates/subpageMenubar.js" type="text/javascript"></script>
-
 		<!-- 컨텐츠 박스 -->
 		<div class="contents">
-			<h3 style="text-align:center">About Us</h3><br>
-			<p>
-				코로나 코어는 단국대 소프트웨어학과 캡스톤 프로젝트의 결과물입니다. <br><br>
-				현재 사이트에서 사용되는 데이터는 공공데이터 API와 보건복지부 사이트에서 추출되었습니다.<br><br>
-				참고로 코로나 코어는 민간 사이트로 분류되어 사이트 정보 사용의 책임소재가 사용자에게 있습니다. <br><br>
-				코로나 코어 사용자분들은 이점 고려한 사이트 이용 부탁드립니다.<br><br>
+			<h3 style="margin-top:50px;" >About Us</h3><br>
+			<p class="subContents">
+				코로나 코어는 단국대 소프트웨어학과 캡스톤 프로젝트 결과물입니다. <br><br>
+				현재 사이트가 제공하는 데이터는 공공데이터 API와 보건복지부 사이트에서 추출되었습니다.<br><br>
+				코로나 코어는 민간 사이트로 분류되어 사이트 정보 사용의 책임이 사용자에게 있습니다. <br><br>
+				사용자분들은 이 점 고려한 사이트 이용 부탁드립니다.<br><br>
 			</p>
 			<h3 style="text-align:center">제작팀</h3>
 			<p>
-				<!-- <br> 김형욱 : khw970421@kakao.com<br>
+				<!-- 
+				<br> 김형욱 : khw970421@kakao.com<br>
 				<br> 윤시준 : tlwns5598@gmail.com<br>
-				<br> 최원석 : abdnjs76@naver.com<br> -->
+				<br> 최원석 : abdnjs76@naver.com<br> 
+				-->
 				<br> 통합 이메일 : corona.core.kr@gmail.com
 			</p>
 		</div>
@@ -92,7 +96,7 @@
 		<script src="../../templates/footer.js"></script>
 		<script src="../js/footerLink.js"></script>
 	</div>
-	<!-- 페이지 원클릭 상단이동 버튼-->
+	<!-- 페이지 원클릭 상단이동 버튼 -->
 	<a id="arrow" href="#"><img src="../../02_img/up_dark.png" style="width:40px; "></a>
 	<script src="../js/arrow.js"></script>
 </body> 

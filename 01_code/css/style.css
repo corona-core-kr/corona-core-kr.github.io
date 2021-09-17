@@ -1,14 +1,16 @@
 /* 기초 CSS */
 body { 
 	background-color: white; 
-	margin:0 auto;
 	padding:0px;
 	text-align: center;
+	overflow-x: hidden;
+	margin:0px;
 }
 a{text-decoration:none;}
 a>h2{color:black;}
 hr{	width:97.4%;}
 
+.center{text-align:center;}
 /* Times New Roman 폰트 */
 .font1{ 
     font-family: "Times New Roman", Serif;
@@ -20,32 +22,37 @@ hr{	width:97.4%;}
     margin-bottom: 0px;
 }
 
-/*드래그 영역 하이라이트*/
+/*드래그 영역 하이라이트 기능*/
 ::selection {
 	background: #fff176;
 	color: blue;
 	font-weight: 1000;
 }
 
-/* 타이틀 */
+/* 코로나 코어 타이틀 */
 .main_title{
 	position : relative;
-	margin:0px;
-	padding:0px;
+	margin:0 auto;
 	margin-top:70px;
-	margin-bottom:130px;
+	margin-bottom:110px;
+	padding:0px;
+	width:350px;
 	padding-top: 50px;
-	height : 40px;
 	text-align : center;
 	font-family: "Times New Roman", Serif;
 	text-align: center;
 	font-size: 60px;
 }
+
+/* [공지사항 AboutUs] - 바깥 여백 */
 .mid{
-	margin:0px;
-	/* overflow-x: hidden; */
+	margin:0px auto;
+
+	padding-top:10px;
+	padding-bottom:10px;
 }
-/*컨텐츠 박스*/
+
+/* [공지사항 AboutUs] - 컨텐츠 부분 */
 .contents{ 
 	margin : 0 auto;
 	width: 1300px;
@@ -54,12 +61,11 @@ hr{	width:97.4%;}
 	border : 1px solid gray;
 }
 
-.center{text-align:center;}
-
-/* .menu_description{
-	border:solid black 1px;
-	padding : 10px;
-} */
+@media (max-width: 1300px){
+	.contents{
+		width: 85%;
+	}
+}
 
 /*인덱스 메뉴 CSS*/	
 #gray_box{
@@ -69,8 +75,7 @@ hr{	width:97.4%;}
 	margin:0px;
 }
 
-.l_height{	line-height: 2;}
-
+.l_height{line-height: 2;}
 
 #arrow{
 	display:none; 
@@ -80,19 +85,19 @@ hr{	width:97.4%;}
 	opacity: 30%;
 }
 
-/* footer*/
+/* [footer] - [footer_mid] - [footer_inside] */
 .footer{
 	display:inline-block;
+	margin:0 auto;
 	width:600px;
-	padding:10px;
 	text-align:center;
 	margin-top:100px;
 	margin-bottom:100px;
+	background-color:#eeeeee;
 }
 .footer_mid{
-	background-color:whitesmoke;
 	border:1px solid;
-	padding:25px;
+	padding:20px;
 }
 .footer_inside{
 	padding:10px;
@@ -102,19 +107,19 @@ hr{	width:97.4%;}
 
 /* 화면 너비 0 ~ 780px */
 @media (max-width: 780px){
-	/* footer CSS*/
+	/* footer CSS */
 	.footer{
-		width:90%;
+		max-width: 95%;
+		margin-top: 20px;
 		margin-bottom:100px;
+		margin-left:0px;
+		margin-right:0px;
 	}
 	.footer_mid{
 		border:1px solid;
-		padding:17x;
+		padding:20px;
 	}
-	.footer_inside{
-		padding:10px;
-	}
-	.mid{
-		overflow-x: hidden;
-	}
+	.mid{overflow-x: hidden;}
 }
+
+
