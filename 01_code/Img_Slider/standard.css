@@ -53,23 +53,23 @@
 
 
 
-.mb_links{
+#mb_links{
     font-family: jua;
     font-size: 20px;
 }
 
-.mb_links .separate_boxes .R_section{
+#mb_links .separate_boxes .R_section{
     background-color: bisque;
     font-size: 18px;
 
 }
-.mb_links .separate_boxes .L_section{
+#mb_links .separate_boxes .L_section{
     background-color: sienna;
     color:white;
     border-radius: 8px;
 }
 
-.mb_links a{
+#mb_links a{
     display: block;
     text-decoration: none;
     color:black;
@@ -78,6 +78,6 @@
     font-size: 22px;
     margin: 30pX;
 }
-.mb_links:nth-child(1){
+#mb_links:nth-child(1){
     color:red;
 }

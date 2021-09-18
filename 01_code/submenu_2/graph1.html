@@ -27,43 +27,65 @@
 	<link rel="stylesheet" href="graph_style.css">
 	<link rel="stylesheet" href="../../01_code/css/menubar_mobile.css">
 
+	<script src="https://cdn.jsdelivr.net/npm/danfojs@0.1.2/dist/index.min.js"></script>
 	<!-- Mixed content (https 사이트에서 http 사이트 요청 시 발생하는 보안 문제) 문제 해결 -->
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 </head>
-<body id="zoom">
+<body>
 	<!-- 모바일 메뉴바 -->
 	<script src="../../templates/mobileMenubar_subPage.js" type="text/javascript"></script>
 	
+	<!-- 메인 타이틀 -->
 	<a href="../../index.html">
 		<h2 class="main_title"> Corona Core </h2>
 	</a>
 	
-
+	<!-- 나머지 요소들 -->
 	<div class="mid">
+
 		<!-- 서브페이지 메뉴 -->
 		<script> let dir_box="통계정보 > 국내 누적 확진자 통계";</script>
 		<script src="../../templates/subpageMenubar.js" type="text/javascript"></script>
 		<script src="../../templates/supPageController.js" type="text/javascript"></script>
 
-
 		<!-- 컨텐츠 박스 -->
 		<div class="contents" id="outer_contents">
 			<h3 style="text-align:center"> 국내 누적 확진자 통계 </h3>
-			<br>확진자 현황 그래프에 기간별로 조회할 수 있는 기능을 더했습니다.<br>
+			<br>확진자 현황 그래프를 기간별로 살펴볼 수 있습니다.<br>
 			특정 기간의 감염 양상을 당시 사회 이슈와 비교해 보세요<br><br>
 			<div id="inside_contents">
 				<div class="center"><br><b>사용방법</b></div>
-				<p style="padding-left: 10px">
-				1. 출력할 차트를 선택해 주세요.<br>
-				2. 조회한 기록은 csv 파일로 다운로드할 수 있습니다.<br>
-				</p>
-			</div>
+					<p class="graph_instruction">
+					- 차트 출력하기를 눌러 주세요.<br>
+					- 출력된 차트의 크기를 조정하려면 차트를 삭제하고<br>
+					&nbsp; 창 크기를 조정한 후 다시 차트를 출력해 주세요<br>
+					- 조회한 기록은 csv 파일로 다운로드할 수 있습니다.<br>
+					</p>
+				</div><br>
+				
+			<div id="graph_section">
+				<!-- 꺾은선 그래프 [출력 - 삭제] -->
+				<h2 style="text-align: center;">꺾은선 그래프</h2>
+				<div style="text-align: center;">
+					<button type="submit" id="lineButton">출력하기</button>
+					<button type="submit" id="cancelLine">삭제하기</button>    
+				</div><br>
+				<div id="line"></div>
 				<br>
-			<div id="graph_iframe">
-				<iframe src="g1_Daily_Total_Increase.html"
-					width=1300
-					height=1230>
-				</iframe>
+
+				<!-- 막대 그래프 [출력 - 삭제] -->
+				<h2 style="text-align: center;">막대 그래프</h2>
+				<div style="text-align: center;">
+					<button type="submit" id="barButton">출력하기</button>
+					<button type="submit" id="cancelBar">삭제하기</button>
+				</div><br>
+				<div id="bar"></div><br>
+
+				<!-- csv 파일 다운로드 -->
+				<div style="text-align: right;">
+					<button class="but">download csv file</button>
+				</div>
+				<script src="./js/g1_Daily_Total_Increase.js" type="module"></script>
 			</div>
 		</div>
 	</div>

@@ -47,23 +47,23 @@ hr{	width:97.4%;}
 /* [공지사항 AboutUs] - 바깥 여백 */
 .mid{
 	margin:0px auto;
-
 	padding-top:10px;
 	padding-bottom:10px;
+	text-align:center;
 }
 
 /* [공지사항 AboutUs] - 컨텐츠 부분 */
 .contents{ 
 	margin : 0 auto;
 	width: 1300px;
-	padding: 20px;
+	padding:20px;
 	min-height : 600px;
 	border : 1px solid gray;
 }
 
 @media (max-width: 1300px){
 	.contents{
-		width: 85%;
+	width: 88%;
 	}
 }
 
@@ -73,6 +73,11 @@ hr{	width:97.4%;}
 	border:1px solid;
 	padding:0px;
 	margin:0px;
+}
+
+#board_section{
+	margin-top:100px;
+	margin-bottom:100px;
 }
 
 .l_height{line-height: 2;}

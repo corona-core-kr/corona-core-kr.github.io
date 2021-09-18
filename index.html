@@ -40,27 +40,26 @@
 
     </head>
     <body>
-        <div class="mid">
-            <!-- 모바일 메뉴바 -->
-            <script src="templates/mobileMenubar.js" type="text/javascript"></script>
-            
-            <a href="index.html">
-                <h2 class="main_title" > Corona Core </h2>
-            </a>
+    <!-- 모바일 메뉴바 -->
+    <script src="templates/mobileMenubar.js" type="text/javascript"></script>
 
+    <a href="index.html">
+        <h2 class="main_title" > Corona Core </h2>
+    </a>
+
+        <div class="mid">
             <!-- 홈페이지 메뉴바 -->
             <script>let dir_box="코로나 코어 > HOME";</script>
             <script src="templates/indexMenubar.js" type="text/javascript"></script>
             <script src="templates/idxPageController.js" type="text/javascript"></script>
             
             <div id="gray_box">
-                <br><br><br><br><br>
                 <!-- 01) 실시간 상황판 템플릿 -->
-                <script src="templates/board.js" type="text/javascript"></script><hr>
+                <div id="board_section"></div>
+                <script src="templates/board_controller.js" type="text/javascript"></script><hr>
 
                 <!-- 02) 슬라이더 -->
                 <div class="slider_div">
-
                     <h3 class="center l_height Jua"> 각 기관 링크<br></h3>
                     <script src="01_code/Img_Slider/js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
                     <script src="01_code/Img_Slider/js/jssor.slider-basic.js" type="text/javascript"></script>
