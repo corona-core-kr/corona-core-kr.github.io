@@ -1,3 +1,4 @@
+
 details {
 	font: 14px "KoPub Batang", Calibri, sans-serif;
 }
@@ -32,9 +33,8 @@ p{
 	color:red;
 }
 
-.float{
-	float:right;
-}
+.float{	float:right;}
+
 .contents2{ 
 	padding: 10px;
 	min-height : 490px;

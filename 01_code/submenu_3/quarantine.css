@@ -1,10 +1,11 @@
 
+
 #outer_contents{
 	background-color:#eeeeee;
 	border:1px solid;
 	margin:10px;
 	margin:0 auto;
-	width:1300px;
+	max-width:70%;
 }
 .mid_box{
 	background-color:#3D3D3D;
@@ -50,10 +51,28 @@
 	color:red;
 }
 
-details {
-	font: 15px "Open Sans", Calibri, sans-serif;
+@media (max-width:1300px){
+	#outer_contents{
+		max-width:80%;
+	}
+}
+@media (max-width:768px){
+	#outer_contents{
+		max-width:90%;
+	}
+}
+@media (max-width:480px){
+	#outer_contents{
+		width:96%;
+	}
 }
 
+details {
+	text-align: left;
+	font: 15px "Open Sans", Calibri, sans-serif;
+	margin:0 auto;
+	width:1000px;
+}
 details > summary {
 	padding: 2px 6px;
 	background-color: #2d2d2d;
@@ -67,4 +86,22 @@ details > summary > div {
 	background-color: #f5f5f5;
 	color:black;
 	padding:2px;
-  }
+}
+
+@media(max-width:1300px){
+	details {
+		width:80%
+	}
+}
+@media(max-width:768px){
+	details {
+		width:90%
+
+	}
+}
+@media(max-width:480px){
+	details {
+		width:95%
+
+	}
+}
