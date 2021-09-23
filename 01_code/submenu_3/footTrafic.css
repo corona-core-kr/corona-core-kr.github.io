@@ -14,3 +14,15 @@ color:white;
 background-color:gray;
 cursor: pointer;
 }
+
+.outer_caution{
+	text-align: center;
+	/* border: 1px solid black; */
+}
+
+.inner_caution{
+	text-align: left;
+	max-width:500px;
+	margin:0 auto;
+	/* border: 1px solid black; */
+}

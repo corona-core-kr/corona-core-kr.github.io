@@ -63,7 +63,9 @@ hr{	width:97.4%;}
 }
 .contents2{
 	margin:0 auto;
-	/* width: 80%; */
+	padding: 10px;
+	border : 1px solid gray;
+	background-color: white;
 }
 
 @media (max-width: 1300px){
