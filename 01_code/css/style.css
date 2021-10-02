@@ -42,8 +42,12 @@ hr{	width:97.4%;}
 	font-family: "Times New Roman", Serif;
 	text-align: center;
 	font-size: 55px;
+	font-weight: bold;
 }
-
+h2{
+	text-decoration:none;
+	text-decoration-color:white;
+}
 /* [공지사항 AboutUs] - 바깥 여백 */
 .mid{
 	margin:0px auto;

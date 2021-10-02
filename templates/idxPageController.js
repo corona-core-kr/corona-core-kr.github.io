@@ -1,7 +1,7 @@
 
 function whenPageLoaded(){
 	// 모바일 (태블릿)
-	if (matchMedia("screen and (max-width: 768.1px)").matches) {
+	if (matchMedia("screen and (max-width: 768px)").matches) {
 		document.getElementById('idxpage_menu_mobile').style.display="block"; // 모바일 뷰 활성화
 		document.getElementById('outer_topMenu').style.display="none"; // PC(소) 뷰 중지
 	}
@@ -29,7 +29,7 @@ whenPageLoaded();
 window.addEventListener('resize', function(event) {
 	
 	// 모바일 (태블릿)
-	if (matchMedia("screen and (max-width: 768.1px)").matches) {
+	if (matchMedia("screen and (max-width: 768px)").matches) {
 		document.getElementById('idxpage_menu_mobile').style.display="block"; // 모바일 뷰 활성화
 		document.getElementById('outer_topMenu').style.display="none"; // PC(소) 뷰 중지
 	}
