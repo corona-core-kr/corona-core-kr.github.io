@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>
-    API TEST
-  </title>
+    <meta charset="utf-8">
+    <title>API TEST</title>
 </head>
 <body>
 
     이곳에서 API를 테스트합니다.
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  
-  <script type="text/javascript">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script type="text/javascript">
     $.ajax({
-      method: "GET",
-      url: "https://dapi.kakao.com/v3/search/book?target=title",
-      data: { query: "미움받을 용기" },
-      headers:{Authorization : 'kakaoAK 4d2cc8952e8351f96a0fa2666d31728e'}
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: { query: "미움받을 용기" },
+        headers:{Authorization : 'kakaoAK 4d2cc8952e8351f96a0fa2666d31728e'}
     })
-      .done(function( msg ) {
+        .done(function( msg ) {
         alert( "Data Saved: " + msg );
-      });
-  </script>
+        });
+    </script>
 
 </body>
 </html>
