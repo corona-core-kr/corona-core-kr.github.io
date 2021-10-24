@@ -23,7 +23,7 @@
                     method: "GET",
                     url: "https://dapi.kakao.com/v3/search/book?target=title",
                     data: { query: $("#bookName").val() },
-                    headers: { Authorization: "4d2cc8952e8351f96a0fa2666d31728e." }
+                    headers: { Authorization: "kakaoAK 4d2cc8952e8351f96a0fa2666d31728e." }
                 })
                     .done(function (msg) {
                         console.log(msg.documents[0].title);
