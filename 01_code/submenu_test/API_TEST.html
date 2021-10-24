@@ -1,26 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
+
 <head>
-    <meta charset="utf-8">
-    <title>API TEST</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>API 연습</title>
 </head>
+
 <body>
+    <h1>내 사이트임 ㅎㅇ</h1>
+    <input id="bookName" value="" type="text">
+    <button id="search">검색</button>
 
-    이곳에서 API를 테스트합니다.
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <script type="text/javascript">
-    $.ajax({
-        method: "GET",
-        url: "https://dapi.kakao.com/v3/search/book?target=title",
-        data: { query: "미움받을 용기" },
-        headers:{Authorization : 'kakaoAK 4d2cc8952e8351f96a0fa2666d31728e'}
-    })
-        .done(function( msg ) {
-        alert( "Data Saved: " + msg );
+    <p></p>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#search").click(function () {
+                $.ajax({
+                    method: "GET",
+                    url: "https://dapi.kakao.com/v3/search/book?target=title",
+                    data: { query: $("#bookName").val() },
+                    headers: { Authorization: "4d2cc8952e8351f96a0fa2666d31728e." }
+                })
+                    .done(function (msg) {
+                        console.log(msg.documents[0].title);
+                        console.log(msg.documents[0].thumbnail);
+                        $("p").append("<strong>" + msg.documents[0].title + "</strong>");
+                        $("p").append("<img src='" + msg.documents[0].thumbnail + "'/>");
+                    });
+            });
         });
     </script>
-
 </body>
-</html>
 
+</html>
