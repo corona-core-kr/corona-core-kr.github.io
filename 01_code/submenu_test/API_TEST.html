@@ -19,7 +19,7 @@
     <script>
         $(document).ready(function () {
             $("#search").click(function () {
-                $.ajax({
+                $.ajax({ 
                     method: "GET",
                     url: "https://dapi.kakao.com/v3/search/book?target=title",
                     data: { query: $("#bookName").val() },
