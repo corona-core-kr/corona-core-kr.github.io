@@ -3,44 +3,48 @@
 #outer_contents{
 	background-color:#eeeeee;
 	border:1px solid;
-	margin:10px;
 	margin:0 auto;
-	max-width:70%;
+	max-width:60%;
+	padding-left:20px;
+	padding-right:20px;
 }
 .mid_box{
 	background-color:#3D3D3D;
+	margin:10px auto;
+	padding: 10px;
+	/* max-width:900px; */
+	max-width:80%;
 	border:1px solid;
-	margin:6px;
 	text-align:center;
 	color:white;
+	font-size: 18px;
 	padding-bottom:15px;
 }
 .mid_box_title{
 	background-color:gray;
-	margin:0px;
-	margin-left:16px;
-	margin-right:16px;
-	margin-top:16px;
-
-	padding-bottom: 1px;
-	padding-top:1px;
+	margin:20px auto;
+	padding:10px;
 	text-align:center;
 	color:white;
-	font-size:15px;
 	line-height: 1;
+	border-radius: 100px;
+	width:100px;
+	font-weight: bold;
 }
 #inside_contents{
 	background-color:white;
-	margin:0px;
-	margin-left:16px;
-	margin-right:16px;
-	padding-left : 10px;
-	padding-right : 10px;
+	margin:0 auto;
 	color:black;
-	text-align:left;
-	line-height: 1.5;
-	border:1px solid;
+	line-height: 2;
+	border:1px solid ;
+	text-align:center;
 }
+#content-blocks{
+	background-color:white;
+	color:black;
+	text-align: left;
+}
+
 #graph_iframe{
 	background-color:white;
 	border:1px solid;

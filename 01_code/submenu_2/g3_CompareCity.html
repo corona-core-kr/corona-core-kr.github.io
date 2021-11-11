@@ -15,17 +15,23 @@
             text-align: center;
         }
         #select-section{
+            border:10px gainsboro ridge;
+            padding:20px;
+            /* border-style: groove; */
             text-align: left;
-            width:200px;
+            width:270px;
             margin:0 auto;
             font-family:monospace;
+        }
+        #graph_output{
+            text-align: center;
         }
     </style>
 </head>
 <body><br>
 
     <div style="text-align:center;"><br>
-        <h2 style="font-weight:bold;">지역별 확진자 증가량 비교</h2>
+        <h2 style="font-weight:bold;">지역별 확진자 증가량 비교</h2><br>
     </div>
     <div id="outer-select-section">
         <div id="select-section" "><br>
@@ -70,19 +76,18 @@
             </select> 
             <br><br>
             
-            <b>그래프 출력</b>
-            <br>
-            <button type="submit" id="but">
-                <img src="../../02_img/icon/icon-printer.png" width=50px; alt="icon-printer">
-            </button>
-
+            <div id="graph_output">
+                <b>그래프 출력</b><br>
+                <button type="submit" id="but">
+                    <img src="../../02_img/icon/icon-printer.png" width=80px; alt="icon-printer">
+                </button>
+            </div>
         </div>
         <!-- ㄴ select-section -->
     </div>
     <!-- ㄴ outer-select-section -->
     <div id="table"></div>
     <div id="plot"></div>
-
 
     <script src="./js/g3_Compare_City.js" type="module"></script>
 </body>

@@ -10,9 +10,9 @@
 }
 /*링크 hover*/
 #btn_group button:hover{ 
-color:white;
-background-color:gray;
-cursor: pointer;
+	color:white;
+	background-color:gray;
+	cursor: pointer;
 }
 
 .outer_caution{

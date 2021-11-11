@@ -3,7 +3,7 @@
 	background-color:#eeeeee;
 	border:1px solid;
   margin:0 auto;
-  /* height: 1400px; */
+  /* height: 2400px; */
 }
 /* 짙은 회색 박스 */
 #inside_contents{
@@ -24,6 +24,9 @@
   margin:0 auto;
 }
 
+button{
+  background-color:honeydew;
+}
 
 
 /* 그래프 부분에 IFrame 없애고 아래 CSS 사용 */
