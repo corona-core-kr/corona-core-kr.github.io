@@ -26,7 +26,18 @@
 	<link rel="stylesheet" href="../css/menubar.css">
 	<link rel="stylesheet" href="graph_style.css">
 	<link rel="stylesheet" href="../../01_code/css/menubar_mobile.css">
-
+	<style>
+		#graph3-desc{
+			text-align: center;
+		}
+		#graph3-desc>p{
+			margin:0 auto;
+			width:500px;
+			text-align: left;
+			padding-left: 10px;
+			line-height: 1.5
+		}
+	</style>
 	<!-- Mixed content (https 사이트에서 http 사이트 요청 시 발생하는 보안 문제) 문제 해결 -->
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 </head>
@@ -51,20 +62,23 @@
 			<h3 style="text-align:center"> 지역별 확진자 비교 통계 </h3>
 			<p>
 				특정 지역의 감염 양상을 보여줍니다.<br>
-				지역별 관리 실태 + 해당 지역의 방역이 원활하게 진행되고 있는지 정도를 파악할 수 있습니다.<br>
+				지역별 관리 실태를 파악할 수 있습니다.<br>
 			</p>
 			<div id="inside_contents">
-				<div class="center"><br><b>사용방법</b></div>
-				<p style="padding-left: 10px; line-height: 1.5">
-					1. 비교할 지역을 선택하고 '도시 추가하기'를 눌러주세요'<br>
-					2. (1) 을 필요한 만큼 반복해 주세요<br>
-					3. 데이터 조회의 시작점이 되는 [연-월-일]을 지정해 주세요<br>
-					4. 조회할 기간을 설정하고 출력 버튼을 눌러주세요.<br>
-				</p>
+
+				<div id="graph3-desc">
+					<br>사용방법<br><br>
+					<p>
+						1. 비교할 지역을 선택하고 '지역추가'를 눌러주세요'<br>
+						2. (1) 을 필요한 만큼 반복하세요<br>
+						3. 데이터 조회의 시작 [연-월-일]을 지정해 주세요<br>
+						4. 조회할 기간을 설정하고 출력 버튼을 누르세요.<br><br>
+					</p>
+				</div>
+
 			</div><br>
 			<div id="graph_iframe">
-			<iframe src="g3_CompareCity.html"
-			width=100% height=800></iframe> 
+			<iframe src="g3_CompareCity.html" width=100% height=1000></iframe> 
 			</div>
 		</div>
 	</div>
