@@ -138,4 +138,6 @@ h2{
 	.mid{overflow-x: hidden;}
 }
 
-
+.cursorpoint {
+	cursor:pointer;
+}
