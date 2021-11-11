@@ -31,7 +31,7 @@ board_mb.innerHTML=
                 <!-- (01) 국내확진자-->
                 <div class="rounded eachBoard" id="board-1st" >
                     <h4 >
-                        <p"> 오늘 국내확진자 </p>
+                        <p"> 당일 사망자 </p>
                     </h4>
                     <hr id="white_line">
                     <iframe src="../../crawler/n1_daily_mb.html"
@@ -43,7 +43,7 @@ board_mb.innerHTML=
                 <!-- (02) 해외 유입 확진자-->
                 <div  class="rounded eachBoard" id="board-2nd" >
                     <h4 >
-                        <p>해외 유입 확진자 </p>
+                        <p>재원 위중증 </p>
                     </h4>
                     <hr id="white_line">
                     <iframe src="../../crawler/n2_world_mb.html"
@@ -55,7 +55,7 @@ board_mb.innerHTML=
                 <!-- (03) 누적 확진자-->
                 <div class="rounded eachBoard" id="board-3rd" >
                     <h4 >
-                        <p>누적 확진자</p>
+                        <p>신규 입원자</p>
                     </h4>
                     <hr id="white_line">
                     <iframe src="../../crawler/n3_total_mb.html"
@@ -67,7 +67,7 @@ board_mb.innerHTML=
                 <!-- (04) 사망자-->
                 <div  class="rounded eachBoard" id="board-4th">
                     <h4 >
-                        <p> 누적 사망자</p>
+                        <p> 당일 확진자</p>
                     </h4>
                     <hr id="white_line">
                     <iframe src="../../crawler/n4_dead_mb.html"
@@ -79,7 +79,7 @@ board_mb.innerHTML=
                 <!-- (05) 격리해제-->
                 <div  class="rounded eachBoard" id="board-5th">
                     <h4 >
-                        <p>격리해제</p>
+                        <p>누적 사망자</p>
                     </h4>
                     <hr id="white_line">
                     <iframe src="../../crawler/n5_discharged_mb.html"
@@ -91,7 +91,7 @@ board_mb.innerHTML=
                 <!-- (06) 치료중-->
                 <div class="rounded eachBoard" id="board-6th">
                     <h4 >
-                        <p"> 치료 중</p>
+                        <p">누적 확진자</p>
                     </h4>
                     <hr id="white_line">
                     <iframe src="../../crawler/n6_under_treatment_mb.html"
@@ -137,7 +137,7 @@ board_pc.innerHTML=
                 <!-- (01) 국내확진자-->
                 <div class="rounded eachBoard" id="board-1st" >
                     <h4 >
-                        <p"> 오늘 국내확진자 </p>
+                        <p"> 당일 사망자 </p>
                     </h4>
                     <hr id="white_line">
                     <iframe src="../../crawler/n1_daily.html"
@@ -150,7 +150,7 @@ board_pc.innerHTML=
                 <!-- (02) 해외 유입 확진자-->
                 <div  class="rounded eachBoard" id="board-2nd" >
                     <h4 >
-                        <p>해외 유입 확진자 </p>
+                        <p>재원 위중증 </p>
                     </h4>
                     <hr id="white_line">
                     <iframe src="../../crawler/n2_world.html"
@@ -162,7 +162,7 @@ board_pc.innerHTML=
                 <!-- (03) 누적 확진자-->
                 <div class="rounded eachBoard" id="board-3rd" >
                     <h4 >
-                        <p>누적 확진자</p>
+                        <p>신규 입원자</p>
                     </h4>
                     <hr id="white_line">
                     <iframe src="../../crawler/n3_total.html"
@@ -174,7 +174,7 @@ board_pc.innerHTML=
                 <!-- (04) 사망자-->
                 <div  class="rounded eachBoard" id="board-4th">
                     <h4 >
-                        <p> 누적 사망자</p>
+                        <p>당일 확진자</p>
                     </h4>
                     <hr id="white_line">
                     <iframe src="../../crawler/n4_dead.html"
@@ -186,7 +186,7 @@ board_pc.innerHTML=
                 <!-- (05) 격리해제-->
                 <div  class="rounded eachBoard" id="board-5th">
                     <h4 >
-                        <p>격리해제</p>
+                        <p>누적 사망자</p>
                     </h4>
                     <hr id="white_line">
                     <iframe src="../../crawler/n5_discharged.html"
@@ -198,7 +198,7 @@ board_pc.innerHTML=
                 <!-- (06) 치료중-->
                 <div class="rounded eachBoard" id="board-6th">
                     <h4 >
-                        <p"> 치료 중</p>
+                        <p">누적 확진자</p>
                     </h4>
                     <hr id="white_line">
                     <iframe src="../../crawler/n6_under_treatment.html"

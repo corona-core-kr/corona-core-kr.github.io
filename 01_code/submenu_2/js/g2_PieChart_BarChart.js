@@ -1,9 +1,5 @@
 import {url} from './utils/Data.js'
-import {end} from './utils/Set_Date.js'
 
-let input = document.getElementById('input')
-let Plot_Button = document.getElementById('plot');
-let Bar_Button = document.getElementById('bar');
 let Cancel_Plot_Button = document.getElementById('cancel_plot');
 let Cancel_Bar_Button = document.getElementById('cancel_bar');
 
@@ -63,14 +59,27 @@ Cancel_Bar_Button.addEventListener('click',function(){
     document.getElementById('bar_div').childNodes[0].remove();
 })
 
+document.querySelector('#submitBtn').addEventListener('click',()=>{
+  let start = document.querySelector('#startDate').value;
+  let end = document.querySelector('#endDate').value;
+  if(new Date(start) - new Date(end) >= 0 ){
+    alert('시작날짜가 종료날짜보다 느립니다.')
+  }
+  else if(new Date(end)=='Invalid Date' || new Date(end)=='Invalid Date'){
+    alert('날짜를 제대로 입력하지 않았습니다.')
+  }
+  else {
+    document.querySelector('#range').setAttribute('min', new Date(start).getTime() / 1000);
+    document.querySelector('#range').setAttribute('max', new Date(end).getTime() / 1000);
+    document.querySelector('#range').setAttribute('step', 86400);
 
-document.querySelector('#range').setAttribute('min',1583247600);
-document.querySelector('#range').setAttribute('max',new Date(end).getTime() / 1000);
-document.querySelector('#range').setAttribute('step',86400);
+    document.querySelector('#range2').setAttribute('min', new Date(start).getTime() / 1000);
+    document.querySelector('#range2').setAttribute('max', new Date(end).getTime() / 1000);
+    document.querySelector('#range2').setAttribute('step', 86400);
+    alert('날짜 범위 수정 적용')
+  }
+})
 
-document.querySelector('#range2').setAttribute('min',1583247600);
-document.querySelector('#range2').setAttribute('max',new Date(end).getTime() / 1000);
-document.querySelector('#range2').setAttribute('step',86400);
 
 $(document).ready(function() {
   $('#range').change(function(){
@@ -111,7 +120,7 @@ $(document).ready(function() {
     var val = $(this).val();
     let result =(Unix_timestamp(val));
     document.querySelector('#div2').innerHTML= result;
-    dfd.read_csv(`http://corona-core.com/01_code/submenu_2/Data/Date/${result.replace(/-/gi, '').slice(2, 8)}.csv`)
+    dfd.read_csv(`${url}${result.replace(/-/gi, '').slice(2, 8)}.csv`)
       .then(
         function (data) {
           const incDec_Length_Except_Sum = data.body__items__item__incDec.data.length - 1;
