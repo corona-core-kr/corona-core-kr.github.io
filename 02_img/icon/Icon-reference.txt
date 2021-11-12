@@ -1,41 +1,18 @@
-꺾은선
-바차트
-파이차트
-
-
-출력하기
-
-
-
-
 꺾은선 그래프
-
 https://www.flaticon.com/kr/premium-icon/line-ascendant-graphic-of-zigzag-arrow_45958
-
 <div>아이콘 제작자 <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com</a></div>
-
-
 
 막대 그래프
-
 https://www.flaticon.com/kr/premium-icon/bar-graph_2195102
-
 <div>아이콘 제작자 <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com</a></div>
-
-
-
 
 파이차트
-
 https://www.flaticon.com/kr/premium-icon/pie-graph_1151523
-
 <div>아이콘 제작자 <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com</a></div>
-
 
 달력 
 <div>아이콘 제작자 <a href="https://www.flaticon.com/kr/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com</a></div>
 https://www.flaticon.com/kr/free-icon/calendar_2933758?term=%EB%8B%AC%EB%A0%A5&page=1&position=36&page=1&position=36&related_id=2933758&origin=search
-
 
 프린트
 https://www.flaticon.com/free-icon/printing_446991?term=print&page=1&position=3&page=1&position=3&related_id=446991&origin=search
@@ -52,3 +29,39 @@ https://www.flaticon.com/search?word=csv&type=icon
 플러스
 https://www.flaticon.com/kr/search?word=%EC%B6%94%EA%B0%80&type=icon
 <div>아이콘 제작자 <a href="https://www.flaticon.com/kr/authors/karacis" title="Karacis">Karacis</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com</a></div>
+
+biology
+<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+https://www.flaticon.com/premium-icon/biological-hazard_3928953
+
+DNA
+<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+https://www.flaticon.com/search?word=DNA&type=icon
+
+MASK
+https://www.flaticon.com/premium-icon/face-mask_3167474
+<div>Icons made by <a href="https://www.flaticon.com/authors/octopocto" title="Octopocto">Octopocto</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+statistics
+<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+https://www.flaticon.com/free-icon/statistics_1170667?term=statistics&page=1&position=2&page=1&position=2&related_id=1170667&origin=search
+
+Home
+https://www.flaticon.com/free-icon/home_25694?term=home&page=1&position=1&page=1&position=1&related_id=25694&origin=search
+<div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+instructions
+<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+https://www.flaticon.com/free-icon/information-button_1176?term=guide&page=1&position=32&page=1&position=32&related_id=1176&origin=search
+
+checked
+<div>Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+https://www.flaticon.com/free-icon/checked_711239?term=check&page=1&position=13&page=1&position=13&related_id=711239&origin=search
+
+
+
+
+
+
+
+

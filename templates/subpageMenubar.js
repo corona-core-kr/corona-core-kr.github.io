@@ -1,5 +1,4 @@
-let subpageMenu = 
-` 
+let subpageMenu = ` 
 <div id="outer_topMenu" style="display:none">
 
 	<div id="front">
@@ -21,11 +20,11 @@ let subpageMenu =
 			<li>|</li> <!-- 메뉴 사이에 그냥 바 모양 텍스트로 단락 구분한 거  -->
 			<li class="topMenuLi"> <a class="menuLink" >통계 정보</a> 
 				<ul class="submenu"> 
-					<li><a href="../submenu_2/graph1.html" class="submenuLink">국내 누적 확진자 통계</a></li> 
-					<li><a href="../submenu_2/graph2.html" class="submenuLink">지역별 확진자 증가 추세</a></li> 
-					<li><a href="../submenu_2/graph3.html" class="submenuLink">지역별 확진자 비교 통계</a></li>
+					<li><a href="../submenu_2/graph1.html" class="submenuLink">국내 누적 확진자수</a></li> 
+					<li><a href="../submenu_2/graph2.html" class="submenuLink">일별 확진자수 (도표)</a></li> 
+					<li><a href="../submenu_2/graph3.html" class="submenuLink">지역별 기간별 비교</a></li>
 					<li><a href="../submenu_2/graph4.html" class="submenuLink">특정 수치 초과일 조회</a></li>
-					<li><a href="../submenu_2/graph5.html" class="submenuLink">지역별 확진자 숫자 조회</a></li>
+					<li><a href="../submenu_2/graph5.html" class="submenuLink">일별 확진자수 (지도)</a></li>
 				</ul> 
 			</li> 
 			<li>|</li>
@@ -50,4 +49,3 @@ let subpageMenu =
 </div>
 `;
 document.write(subpageMenu);
-

@@ -138,6 +138,16 @@ h2{
 	.mid{overflow-x: hidden;}
 }
 
-.cursorpoint {
-	cursor:pointer;
+.cursorpoint {cursor:pointer;}
+
+.cursorpoint:hover{	
+	background-color: pink;
+}
+.cursorpoint:active{
+	background-color: pink;
+}
+
+.printer:focus{
+	background-color: rgb(245, 123, 166);
+	transition:1s
 }
