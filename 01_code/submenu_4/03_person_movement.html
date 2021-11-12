@@ -24,9 +24,10 @@
 	<!-- css -->
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/menubar.css">
-	<link rel="stylesheet" href="footTrafic.css">
 	<link rel="stylesheet" href="else.css">
 	<link rel="stylesheet" href="../../01_code/css/menubar_mobile.css">
+	<link rel="stylesheet" href="./footTrafic.css">
+
 </head>
 <body id="zoom">
 
@@ -46,30 +47,28 @@
 
 		<!-- 컨텐츠 박스 -->
 		<div class="contents">
-			<br><h3 style="text-align:center"> 지자체별 확진자 동선 정보</h3><br>
-			<hr>
-			<br>
+			<br><br>
+			<h2 style="text-align:center"> 지자체별 확진자 동선 정보</h2><br>
+			<br><br>
 
 			<div class="outer_caution">
 				<div class="inner_caution">
 					<p>
-						지자체별 확진자 동선 정보를 제공합니다. <br>
-						각 링크를 클릭하면 해당 지자체 사이트에서 정보를 조회할 수 있습니다.<br><br>
-						</p>
-						<span style="text-align : center"> * 주의사항</span>
-						<br>
-						<p>
+						+ 지자체별 확진자 동선 정보를 제공합니다. <br>
+						+ 각 링크를 클릭하면 해당 지자체 사이트에서 정보를 조회할 수 있습니다.
+					</p>
+					<div style="text-align:center; font-weight: bold;"> * 주의사항</div>
+					<p>
 						- 공개 기간이(14일) 경과되면 장소 등 공개내용을 삭제함<br>
-						- 확진환자의 거주지(읍면동 단위 이하) 및 성별, 연령, 직장명 등 개인정보는 공개하지 않음<br>
+						- 확진자의 거주지(읍면동 단위 이하) 및 성별, 연령, 직장명 등 개인정보는 공개하지 않음<br>
 						- 해당 공간 내 모든 접촉자가 파악된 경우 공개하지 않음<br>
-						</p>
+					</p>
 				</div>
 			</div>
 			
 			
-			<hr>
 			<br>
-			<div style="font-size:30px; ">
+			<div class="eachArea">
 				<div id="btn_group" style="width:500px; text-align:center; margin:0 auto;"> 
 					<button id="test_btn1" onclick="window.open('https://www.seoul.go.kr/coronaV/coronaStatus.do')">서울</button> 
 					<button id="test_btn2" onclick="window.open('https://www.busan.go.kr/covid19/Corona19/travelhist.do')">부산</button> 

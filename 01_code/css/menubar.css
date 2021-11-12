@@ -39,9 +39,12 @@
 	height:25px;
 	line-height:25px;
 	border-radius: 10px;
-	background-color: antiquewhite;
-	color:brown;
 	text-align: center;
+
+	background-color: ghostwhite;
+	color:black;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-family: '바탕';
 }
 
 #topMenu { 
