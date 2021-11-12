@@ -39,9 +39,9 @@ let Menues = `
 			<li>|</li>
 			<li class="topMenuLi"> <a class="menuLink">방역 정보</a>
 				<ul class="submenu">
-					<li><a href="01_code/submenu_4/01_policy.html" class="submenuLink">사회적 거리두기 정책</a></li> <!--단계별실행방안-->
+					<li><a href="01_code/submenu_4/01_policy.html" class="submenuLink">사회적 거리두기 정책</a></li>
 					<li><a href="01_code/submenu_4/03_mask.html" class="submenuLink">마스크 착용</a></li>
-					<li><a href="01_code/submenu_4/03_person_movement.html" class="submenuLink">확진자 동선</a></li> <!--하이퍼링크 버튼, 지자체별-->
+					<li><a href="01_code/submenu_4/03_person_movement.html" class="submenuLink">확진자 동선</a></li> 
 
 				</ul>
 			</li>
