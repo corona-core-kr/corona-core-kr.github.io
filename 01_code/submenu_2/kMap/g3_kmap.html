@@ -7,9 +7,22 @@
         <link type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
         <!-- Mixed content (https 사이트에서 http 사이트 요청 시 발생하는 보안 문제) 문제 해결 -->
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <style>
+            .cursorpoint {
+                cursor:pointer;
+                font-size: 14px;
+            }
+            .cursorpoint:hover{	
+                background-color: pink;
+            }
+            .cursorpoint:active{
+                background-color: black;
+                color: wheat;
+            }
+        </style>
     </head>
     <div style="text-align: center;">
-        <br><h2>지역별 확진자수 조회</h2>
+        <br><h2>지도로 일일 확진자수 조회하기</h2>
         <h4>(모바일 뷰는 지원되지 않습니다)</h4>
     </div>
     <script type="text/javascript" src="js/d3.js"></script>
@@ -21,8 +34,15 @@
     <body>
         <div id="outerDateButton">
             <input type="date" id="input">
-            <button type="submit" id="plot">날짜 지정</button><br>
+            <!-- <button type="submit" id="plot">날짜 지정</button><br> -->
+            <!-- <br><br> -->
+            <button style="line-height: 20px; border-radius: 30px;" class="cursorpoint " type="submit" id="plot"> 
+                날짜 설정 완료 
+                <img src="../../../02_img/icon/icon-checked.png" width=15px; alt="날짜 설정 완료">
+            </button>
         </div>
         <div id="container"></div>
     </body>
 </html>
+
+
