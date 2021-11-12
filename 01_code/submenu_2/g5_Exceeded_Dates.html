@@ -8,10 +8,16 @@
     <title>Document</title>
     <!-- Mixed content (https 사이트에서 http 사이트 요청 시 발생하는 보안 문제) 문제 해결 -->
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <style>
+        body{
+            background-color: white;
+
+        }
+    </style>
 </head>
 
 <body>
-<input type="text" id = 'numberInput'placeholder="기준값을 입력하세요 (n명)">
+<input type="text" id = 'numberInput'placeholder="기준 수치 입력 (n명)">
 <div style="margin:0 auto" align="center" >
     <h2>특정 코로나 확진자 수치 초과일 검색하기</h2>
 </div>

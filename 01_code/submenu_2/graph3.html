@@ -7,78 +7,67 @@
 	<meta name="author" content="tlwns5598@gmail.com" />
 	<meta name="keywords" content="코로나 코어 Corona-Core">
 	<meta name="viewport" content="width=device-width,initialscale=1, minimum-scale=1, maximum-scale=1, user-scaleable=no">
-	<meta name="description" content="지역별 확진자 비교 통계">
+	<meta name="description" content="지역별 확진자 숫자 조회">
 	<title>Corona Core</title>
 	
 	<!-- SNS 공유용 메타데이터 -->
 	<meta property="og:title" content="코로나 코어 통계정보">
-	<meta property="og:description" content="지역별 확진자 비교 통계."> 
+	<meta property="og:description" content="지역별 확진자 숫자 조회"> 
 	<meta property="og:type" content="website"> 
 	<meta property="og:image" content="../../02_img/home.jpg">
-	<meta property="og:url" content="http://corona-core.com/01_code/submenu_2/graph3.html">
+	<meta property="og:url" content="http://corona-core.com/01_code/submenu_2/graph5.html">
 	
 	<!-- Favicon [Chrome, Safari, IE] , [Firefox, Opera] -->
 	<link rel="shortcut icon" href="../../02_img/icon/virus.png" type="image/x-icon">
 	<link rel="icon"          href="../../02_img/icon/virus.png" type="image/x-icon">
 	
-	<!-- css -->
+	<!-- css --> 
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/menubar.css">
 	<link rel="stylesheet" href="graph_style.css">
 	<link rel="stylesheet" href="../../01_code/css/menubar_mobile.css">
-	<style>
-		#graph3-desc{
-			text-align: center;
-		}
-		#graph3-desc>p{
-			margin:0 auto;
-			width:500px;
-			text-align: left;
-			padding-left: 10px;
-			line-height: 1.5
-		}
-	</style>
+	
 	<!-- Mixed content (https 사이트에서 http 사이트 요청 시 발생하는 보안 문제) 문제 해결 -->
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 </head>
 <body id="zoom">
-
+	
 	<!-- 모바일 메뉴바 -->
 	<script src="../../templates/mobileMenubar_subPage.js" type="text/javascript"></script>
-
+	
 	<a href="../../index.html">
 		<h2 class="main_title"> Corona Core </h2>
 	</a>
 
 	<div class="mid">
 		<!-- 서브페이지 메뉴 -->
-		<script> let dir_box="통계정보 > 지역별 확진자 비교 통계";</script>
+		<script> let dir_box="통계정보 > 지역별 확진자수 조회";</script>
 		<script src="../../templates/subpageMenubar.js" type="text/javascript"></script>
 		<script src="../../templates/supPageController.js" type="text/javascript"></script>
 
 		<!-- 컨텐츠 박스 -->
 		<div class="contents" id="outer_contents">
-			<h3 style="text-align:center"> 지역별 확진자 비교 통계 </h3>
-			<p>
-				특정 지역의 감염 양상을 보여줍니다.<br>
-				지역별 관리 실태를 파악할 수 있습니다.<br>
-			</p>
+			<h1 style="text-align:center"> 지역별 확진자 숫자 조회 </h1>
+			<br> 행정구역 별 확진자 수치를 확인할 수 있습니다.
+			<br> 지역은 특별시, 광역시, 자치시와 전국 8도로 구분합니다. <br><br>
 			<div id="inside_contents">
-
-				<div id="graph3-desc">
-					<br>사용방법<br><br>
-					<p>
-						1. 비교할 지역을 선택하고 '지역추가'를 눌러주세요'<br>
-						2. (1) 을 필요한 만큼 반복하세요<br>
-						3. 데이터 조회의 시작 [연-월-일]을 지정해 주세요<br>
-						4. 조회할 기간을 설정하고 출력 버튼을 누르세요.<br><br>
-					</p>
-				</div>
-
-			</div><br>
-			<div id="graph_iframe">
-			<iframe src="g3_CompareCity.html" width=100% height=1100></iframe> 
+				<div class="center"><br><b>사용방법</b></div>
+				<p style="padding-left: 10px">
+				1. 조회할 연-월-일을 선택해 주세요.<br>
+				2. 날짜 지정 버튼을 클릭하고 행정 구역 명칭에 마우스를 올려 주세요 <br>
+				</p>
 			</div>
+				<br>
+			<div id="graph_outerframe">
+				<div id="graph_iframe">
+					<iframe src="kMap/g3_kmap.html"
+						width=100%
+						height=930
+						frameborder="0">
+					</iframe>
+				</div>
+			</div>
+			
 		</div>
 	</div>
 	<!-- Footer -->
@@ -91,4 +80,3 @@
 	<script src="../js/arrow.js"></script>
 </body> 
 </html>
-

@@ -14,9 +14,8 @@
 
 #graph_outerframe{
   text-align: center;
-  background-color: gainsboro;
+	background-color: white;
   border: 4mm ridge ghostwhite;
-
 }
 
 #graph_iframe{
