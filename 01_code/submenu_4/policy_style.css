@@ -45,6 +45,7 @@ p{
   margin: 0 auto; 
   text-align: center;
 }
+
 #outer_details{
   background-color:white;
   border:1px solid;
@@ -60,6 +61,11 @@ p{
   font-size:15px;
   text-decoration: none;
   color:red;
+}
+
+#lower_details{
+  width:80%;
+  margin:0 auto;
 }
 
 @media (max-width:1300px){
@@ -83,8 +89,15 @@ p{
     text-align: center;
     width:88%;
   }
+
   details{
     width:97%;
   }
 }
+@media (max-width:1000px){
+  #lower_details{
+    width:100%;
+  }
+}
+
 
