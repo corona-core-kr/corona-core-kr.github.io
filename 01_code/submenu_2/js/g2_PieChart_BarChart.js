@@ -3,6 +3,7 @@ import {url} from './utils/Data.js'
 let Cancel_Plot_Button = document.getElementById('cancel_plot');
 let Cancel_Bar_Button = document.getElementById('cancel_bar');
 
+// csv 파일 다운로드
 function downloadCSV(location, increase){
   let array = [];
   array.push(location);
@@ -31,37 +32,50 @@ function downloadCSV(location, increase){
   document.body.removeChild(downloadLink);
 }
 
+// 기본 날짜 설정
+let start = document.querySelector('#startDate').value;
+// start = '20200304';
+start = 2020-03-10;
 
+let end = document.querySelector('#endDate').value;
+// end = '20211123';
+end = 2021-11-22;
 
+// 파이 차트 삭제 버튼
 Cancel_Plot_Button.addEventListener('click',function(){
   if(document.getElementById('plot_div').childNodes[0]==undefined){
-    alert('삭제할 내용이 없어');
+    alert('삭제할 내용이 없습니다');
     return 0;
   }
-
-  let chart = confirm("원 차트를 지우겠습니까?");
-  if (chart == false)
-    alert('지우기 취소')
-  else
     document.getElementById('plot_div').childNodes[0].remove();
+
+  // let chart = confirm("원 차트를 지우겠습니까?");
+  // if (chart == false)
+  //   alert('지우기 취소')
+  // else
+  //   document.getElementById('plot_div').childNodes[0].remove();
 })
 
+// 바 차트 삭제 버튼
 Cancel_Bar_Button.addEventListener('click',function(){
   if(document.getElementById('bar_div').childNodes[0]==undefined){
-    alert('삭제할 내용이 없어');
+    alert('삭제할 내용이 없습니다');
     return 0;
   }
+  document.getElementById('bar_div').childNodes[0].remove();
 
-  let chart = confirm("막대 차트를 지우겠습니까?");
-  if(chart == false)
-    alert('지우기 취소')
-  else
-    document.getElementById('bar_div').childNodes[0].remove();
+
+  // let chart = confirm("막대 차트를 지우겠습니까?");
+  // if(chart == false)
+  //   alert('지우기 취소')
+  // else
+  //   document.getElementById('bar_div').childNodes[0].remove();
 })
 
+// 날짜 설정 버튼
 document.querySelector('#submitBtn').addEventListener('click',()=>{
-  let start = document.querySelector('#startDate').value;
-  let end = document.querySelector('#endDate').value;
+  // let start = document.querySelector('#startDate').value;
+  // let end = document.querySelector('#endDate').value;
   if(new Date(start) - new Date(end) >= 0 ){
     alert('시작날짜가 종료날짜보다 느립니다.')
   }

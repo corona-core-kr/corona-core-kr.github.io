@@ -38,9 +38,3 @@ async function load (value) {
     alert(err);
   }
 }
-
-
-
-
-
-

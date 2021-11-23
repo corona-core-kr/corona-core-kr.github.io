@@ -70,8 +70,9 @@ function drawMap(target) {
       });
   });
 
-  //텍스트 위치 조절 - 하드코딩으로 위치 조절을 했습니다.
+  //텍스트 위치 조절 - 하드코딩으로 조절
   function translateTolabel(d) {
+    // 무게중심 값 받기
     var arr = path.centroid(d);
     if (d.properties.code == 31) {
       //서울 경기도 이름 겹쳐서 경기도 내리기
@@ -115,26 +116,26 @@ function drawMap(target) {
           service = df.Price.data;
           let isGunyeok = service.length == 18 ? 1 : 0;
 
-          let j = document.getElementById('label-Jeju-do')
+          let jj = document.getElementById('label-Jeju-do')
           let gn = document.getElementById('label-Gyeongsangnam-do')
-          let gb= document.getElementById('label-Gyeongsangbuk-do')
+          let gb = document.getElementById('label-Gyeongsangbuk-do')
           let jb = document.getElementById('label-Jeollabuk-do')
           let jn = document.getElementById('label-Jeollanam-do')
-          let  cb= document.getElementById('label-Chungcheongbuk-do')
-          let  cn= document.getElementById('label-Chungcheongnam-do')
-          let  gw= document.getElementById('label-Gangwon-do')
+          let cb = document.getElementById('label-Chungcheongbuk-do')
+          let cn = document.getElementById('label-Chungcheongnam-do')
+          let gw = document.getElementById('label-Gangwon-do')
           let gg = document.getElementById('label-Gyeonggi-do')
           let sj = document.getElementById('label-Sejong')
           let us = document.getElementById('label-Ulsan')
-          let  dj= document.getElementById('label-Daejeon')
-          let  gj= document.getElementById('label-Gwangju')
-          let  ic= document.getElementById('label-Incheon')
-          let  dg= document.getElementById('label-Daegu')
-          let  bs= document.getElementById('label-Busan')
-          let  su= document.getElementById('label-Seoul')
+          let dj = document.getElementById('label-Daejeon')
+          let gj = document.getElementById('label-Gwangju')
+          let ic = document.getElementById('label-Incheon')
+          let dg = document.getElementById('label-Daegu')
+          let bs = document.getElementById('label-Busan')
+          let su = document.getElementById('label-Seoul')
 
-          j.addEventListener('mouseover',function(){
-            j.setAttribute('title',service[0+isGunyeok]);
+          jj.addEventListener('mouseover',function(){
+            jj.setAttribute('title',service[0+isGunyeok]);
           });
           gn.addEventListener('mouseover',function(){
             gn.setAttribute('title',service[1+isGunyeok]);

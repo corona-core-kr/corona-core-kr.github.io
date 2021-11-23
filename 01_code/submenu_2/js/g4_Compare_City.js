@@ -3,7 +3,6 @@ const cityTag = document.getElementById('city')
 const addButton = document.getElementById('addButton');
 const cityTitle = document.querySelector('.cityMember');
 let button = document.getElementById('but');
-
 let cityMember=[];
 
 const addEventListener1 = ()=>{
