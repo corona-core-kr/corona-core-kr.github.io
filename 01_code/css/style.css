@@ -145,35 +145,42 @@ h2{
     6px 6px 5px 3px black;
 }
 
-.cursorpoint:hover{	
-	transition:0.5s;
-	/* background-color:red; */
-}
-.cursorpoint:active{
-	/* box-shadow:
-	inset 1px 1px 4px 3px black; */
-	
-}
-
-.printer:focus{
-	/* animation: onoff 1s 0s 1 linear alternate; */
-
-	-webkit-animation: onoff 1s 0s 1 linear alternate;
-    -moz-animation: onoff 1s 0s 1 linear alternate;
-    -ms-animation: onoff 1s 0s 1 linear alternate;
-    -o-animation: onoff 1s 0s 1 linear alternate;
-    animation: onoff 1s 0s 1 linear alternate;
-
-}
-.bin:focus{
-	/* animation: onoff 0.3s 0s 1 linear alternate; */
-
+.cursorpoint:focus{	
 	-webkit-animation: onoff 0.3s 0s 1 linear alternate;
     -moz-animation: onoff 0.3s 0s 1 linear alternate;
     -ms-animation: onoff 0.3s 0s 1 linear alternate;
     -o-animation: onoff 0.3s 0s 1 linear alternate;
     animation: onoff 0.3s 0s 1 linear alternate;
 }
+
+.cursorpoint:hover{	
+	transition:0.5s;
+	/* background-color:red; */
+}
+.cursorpoint:active{
+	-webkit-animation: onoff 0.3s 0s 1 linear alternate;
+    -moz-animation: onoff 0.3s 0s 1 linear alternate;
+    -ms-animation: onoff 0.3s 0s 1 linear alternate;
+    -o-animation: onoff 0.3s 0s 1 linear alternate;
+    animation: onoff 0.3s 0s 1 linear alternate;
+}
+
+.printer:active{
+	-webkit-animation: onoff 1s 0s 1 linear alternate;
+    -moz-animation: onoff 1s 0s 1 linear alternate;
+    -ms-animation: onoff 1s 0s 1 linear alternate;
+    -o-animation: onoff 1s 0s 1 linear alternate;
+    animation: onoff 1s 0s 1 linear alternate;
+}
+
+/* .bin:active{
+	-webkit-animation: onoff 0.3s 0s 1 linear alternate;
+    -moz-animation: onoff 0.3s 0s 1 linear alternate;
+    -ms-animation: onoff 0.3s 0s 1 linear alternate;
+    -o-animation: onoff 0.3s 0s 1 linear alternate;
+    animation: onoff 0.3s 0s 1 linear alternate;
+} */
+
 @keyframes onoff {
     0% {
         box-shadow:
@@ -188,3 +195,13 @@ h2{
         inset 0px 0px 0px 0px whitesmoke;
     }
 }
+
+/* @keyframes glow {
+    0% {
+		opacity : 1;
+    }
+    100% {
+		opacity : 0.5;
+    }
+} */
+
