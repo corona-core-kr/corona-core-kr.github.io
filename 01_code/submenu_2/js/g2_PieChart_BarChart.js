@@ -1,9 +1,8 @@
 import {url} from './utils/Data.js'
 
+// csv 다운로드
 let Cancel_Plot_Button = document.getElementById('cancel_plot');
 let Cancel_Bar_Button = document.getElementById('cancel_bar');
-
-// csv 파일 다운로드
 function downloadCSV(location, increase){
   let array = [];
   array.push(location);
@@ -74,9 +73,9 @@ document.querySelector('#submitBtn').addEventListener('click',()=>{
     alert('날짜를 제대로 입력하지 않았습니다.')
   }
   else {
-    document.querySelector('#range').setAttribute('min', new Date(start).getTime() / 1000);
-    document.querySelector('#range').setAttribute('max', new Date(end).getTime() / 1000);
-    document.querySelector('#range').setAttribute('step', 86400);
+    document.querySelector('#range1').setAttribute('min', new Date(start).getTime() / 1000);
+    document.querySelector('#range1').setAttribute('max', new Date(end).getTime() / 1000);
+    document.querySelector('#range1').setAttribute('step', 86400);
 
     document.querySelector('#range2').setAttribute('min', new Date(start).getTime() / 1000);
     document.querySelector('#range2').setAttribute('max', new Date(end).getTime() / 1000);
@@ -87,60 +86,69 @@ document.querySelector('#submitBtn').addEventListener('click',()=>{
 
 
 
-var val;
+let val;
 let result;
-// 화면에 표시되는 날짜 값 변경
+// 선택되었는지 여부
+let g1=0;
+let g2=0;
 
+// 드래그 중 실시간으로 날짜 값 HTML 생성해서 출력하기
 $(document).ready(function() {
-  $('#range').mousemove(function(){
-    val = $(this).val();
-    result =(Unix_timestamp(val));
-    document.querySelector('#div1').innerHTML= result;
-  });
-});
 
-  $(document).ready(function() {
-    $('#range2').mousemove(function(){
+  $('#range1').mousedown(function(){g1=1;});
+  $('#range2').mousedown(function(){g2=1;});
+  $('#range1').mouseup(function(){g1=0;});
+  $('#range2').mouseup(function(){g2=0;});
+
+  // 슬라이더1 위에 날짜 값 생성
+  $('#range1').mousemove(function(){
+    if(g1==1){
+      val = $(this).val();
+      result =(Unix_timestamp(val));
+      document.querySelector('#div1').innerHTML= result;
+    }
+  });
+
+  // 슬라이더2 위에 날짜 값 생성
+  $('#range2').mousemove(function(){
+    if(g2==1){
       val = $(this).val();
       result =(Unix_timestamp(val));
       document.querySelector('#div2').innerHTML= result;
-    });
-});
-
-
-$(document).ready(function() {
-  $('#range').change(function(){
-      
-      dfd.read_csv(`${url}${result.replace(/-/gi,'').slice(2,8)}.csv`)
-        .then(
-          function(data) {
-            const incDec_Length_Except_Sum = data.body__items__item__incDec.data.length-1;
-            const gubun_Length_Except_Sum = data.body__items__item__gubun.data.length-1;
-
-            let df = new dfd.DataFrame({
-              Price: data.body__items__item__incDec.data.slice(0,incDec_Length_Except_Sum),   //표의 맨 아래 합계를 제거한 내용들
-              Location : data.body__items__item__gubun.data.slice(0,gubun_Length_Except_Sum),
-              Type: data.body__items__item__gubun.data.slice(0,gubun_Length_Except_Sum)
-            })
-
-            document.querySelector('.but').addEventListener('click',()=>downloadCSV(df.Location.data,df.Price.data));
-            df.plot("plot_div").pie({ values: "Price", labels: "Type" })
-
-          }
-        )
-        .catch(() => {
-
-          alert('저장된 데이터 이외의 날짜를 클릭했습니다.');
-        })
-
-    // });
+    }
   });
 });
 
 
+// 날짜 별 데이터 받아오기 for PIE_CHART
+$(document).ready(function() {
+  $('#range1').change(function(){
+
+    dfd.read_csv(`${url}${result.replace(/-/gi,'').slice(2,8)}.csv`)
+      .then(
+        function(data) {
+          const incDec_Length_Except_Sum = data.body__items__item__incDec.data.length-1;
+          const gubun_Length_Except_Sum = data.body__items__item__gubun.data.length-1;
+
+          let df = new dfd.DataFrame({
+            Price: data.body__items__item__incDec.data.slice(0,incDec_Length_Except_Sum),   //표의 맨 아래 합계를 제거한 내용들
+            Location : data.body__items__item__gubun.data.slice(0,gubun_Length_Except_Sum),
+            Type: data.body__items__item__gubun.data.slice(0,gubun_Length_Except_Sum)
+          })
+          // CSV 다운로드
+          document.querySelector('.but').addEventListener('click',()=>downloadCSV(df.Location.data,df.Price.data));
+          df.plot("plot_div").pie({ values: "Price", labels: "Type" })
+        }
+      )
+      .catch(() => {
+        // alert('저장된 데이터 이외의 날짜를 클릭했습니다.');
+      })
+  });
+});
+
+// 날짜 별 데이터 받아오기 for LINE_CHART
 $(document).ready(function() {
   $('#range2').change(function() {
-
     dfd.read_csv(`${url}${result.replace(/-/gi, '').slice(2, 8)}.csv`)
       .then(
         function (data) {
@@ -162,8 +170,8 @@ $(document).ready(function() {
       .catch(() => {
         alert('저장된 데이터 이외의 날짜를 클릭했습니다.');
       })
-
-  })})
+  })
+})
 
 
 function Unix_timestamp(t){
