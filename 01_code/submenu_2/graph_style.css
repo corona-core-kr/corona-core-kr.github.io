@@ -71,3 +71,15 @@ details > summary {
   margin:2%;
   border:3px black dotted;
 }
+
+/* input boxes */
+.g2_box1{
+  border:dashed 2px gray;
+  margin:40px;
+  padding:30px;
+}
+/* csv box */
+.g2_box2{
+  margin:30px;
+  padding:30px;
+}

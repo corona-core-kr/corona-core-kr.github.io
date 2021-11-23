@@ -139,6 +139,10 @@ h2{
 	.mid{overflow-x: hidden;}
 }
 
+.redTxt{
+	color:red;
+	font-weight: bold;
+}
 .cursorpoint {
 	cursor:pointer;
 	box-shadow:

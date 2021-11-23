@@ -37,13 +37,8 @@ Cancel_Plot_Button.addEventListener('click',function(){
     alert('삭제할 내용이 없습니다');
     return 0;
   }
-    document.getElementById('plot_div').childNodes[0].remove();
-
-  // let chart = confirm("원 차트를 지우겠습니까?");
-  // if (chart == false)
-  //   alert('지우기 취소')
-  // else
-  //   document.getElementById('plot_div').childNodes[0].remove();
+  document.getElementById('plot_div').childNodes[0].remove();
+  document.querySelector('#div1').innerHTML= '';
 })
 
 // 바 차트 삭제 버튼
@@ -53,13 +48,7 @@ Cancel_Bar_Button.addEventListener('click',function(){
     return 0;
   }
   document.getElementById('bar_div').childNodes[0].remove();
-
-
-  // let chart = confirm("막대 차트를 지우겠습니까?");
-  // if(chart == false)
-  //   alert('지우기 취소')
-  // else
-  //   document.getElementById('bar_div').childNodes[0].remove();
+  document.querySelector('#div2').innerHTML= '';
 })
 
 // 날짜 설정 버튼
@@ -94,12 +83,13 @@ let g2=0;
 
 // 드래그 중 실시간으로 날짜 값 HTML 생성해서 출력하기
 $(document).ready(function() {
-
   $('#range1').mousedown(function(){g1=1;});
   $('#range2').mousedown(function(){g2=1;});
   $('#range1').mouseup(function(){g1=0;});
   $('#range2').mouseup(function(){g2=0;});
+});
 
+$(document).ready(function() {
   // 슬라이더1 위에 날짜 값 생성
   $('#range1').mousemove(function(){
     if(g1==1){
@@ -108,16 +98,19 @@ $(document).ready(function() {
       document.querySelector('#div1').innerHTML= result;
     }
   });
-
-  // 슬라이더2 위에 날짜 값 생성
-  $('#range2').mousemove(function(){
-    if(g2==1){
-      val = $(this).val();
-      result =(Unix_timestamp(val));
-      document.querySelector('#div2').innerHTML= result;
-    }
-  });
 });
+$(document).ready(function() {
+    // 슬라이더2 위에 날짜 값 생성
+    $('#range2').mousemove(function(){
+      if(g2==1){
+        val = $(this).val();
+        result =(Unix_timestamp(val));
+        document.querySelector('#div2').innerHTML= result;
+      }
+    });
+});
+
+
 
 
 // 날짜 별 데이터 받아오기 for PIE_CHART
