@@ -33,13 +33,15 @@ function downloadCSV(location, increase){
 }
 
 // 기본 날짜 설정
-let start = document.querySelector('#startDate').value;
+// let start = document.querySelector('#startDate').value;
 // start = '20200304';
-start = 2020-03-10;
+// start = 2020-03-10;
+// start = '2020-03-10';
 
-let end = document.querySelector('#endDate').value;
+// let end = document.querySelector('#endDate').value;
 // end = '20211123';
-end = 2021-11-22;
+// end = 2021-11-22;
+// end = '2021-11-22';
 
 // 파이 차트 삭제 버튼
 Cancel_Plot_Button.addEventListener('click',function(){
@@ -74,8 +76,8 @@ Cancel_Bar_Button.addEventListener('click',function(){
 
 // 날짜 설정 버튼
 document.querySelector('#submitBtn').addEventListener('click',()=>{
-  // let start = document.querySelector('#startDate').value;
-  // let end = document.querySelector('#endDate').value;
+  let start = document.querySelector('#startDate').value;
+  let end = document.querySelector('#endDate').value;
   if(new Date(start) - new Date(end) >= 0 ){
     alert('시작날짜가 종료날짜보다 느립니다.')
   }
@@ -100,7 +102,10 @@ $(document).ready(function() {
 
     var val = $(this).val();
     let result =(Unix_timestamp(val));
+
+    // 화면에 표시되는 값 변경
     document.querySelector('#div1').innerHTML= result;
+    
     dfd.read_csv(`${url}${result.replace(/-/gi,'').slice(2,8)}.csv`)
       .then(
         function(data) {

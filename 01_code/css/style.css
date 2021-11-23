@@ -139,21 +139,52 @@ h2{
 	.mid{overflow-x: hidden;}
 }
 
-.cursorpoint {cursor:pointer;}
+.cursorpoint {
+	cursor:pointer;
+	box-shadow:
+    6px 6px 5px 3px black;
+}
 
 .cursorpoint:hover{	
-	/* background-color: rgb(171, 248, 248); */
+	transition:0.5s;
+	/* background-color:red; */
 }
 .cursorpoint:active{
-	box-shadow:
-	inset 1px 1px 4px 3px black;
-	/* transition: 3s; */
-
+	/* box-shadow:
+	inset 1px 1px 4px 3px black; */
+	
 }
 
 .printer:focus{
-	box-shadow:
-	inset 3px 3px 7px 3px black;
-	/* background-color: rgb(0, 255, 255); */
-	/* transition: 3s; */
+	/* animation: onoff 1s 0s 1 linear alternate; */
+
+	-webkit-animation: onoff 1s 0s 1 linear alternate;
+    -moz-animation: onoff 1s 0s 1 linear alternate;
+    -ms-animation: onoff 1s 0s 1 linear alternate;
+    -o-animation: onoff 1s 0s 1 linear alternate;
+    animation: onoff 1s 0s 1 linear alternate;
+
+}
+.bin:focus{
+	/* animation: onoff 0.3s 0s 1 linear alternate; */
+
+	-webkit-animation: onoff 0.3s 0s 1 linear alternate;
+    -moz-animation: onoff 0.3s 0s 1 linear alternate;
+    -ms-animation: onoff 0.3s 0s 1 linear alternate;
+    -o-animation: onoff 0.3s 0s 1 linear alternate;
+    animation: onoff 0.3s 0s 1 linear alternate;
+}
+@keyframes onoff {
+    0% {
+        box-shadow:
+        inset 0px 0px 0px 0px whitesmoke;
+    }
+    50% {
+        box-shadow:
+        inset 4px 4px 5px 5px black;
+    } 
+    100% {
+        box-shadow:
+        inset 0px 0px 0px 0px whitesmoke;
+    }
 }
