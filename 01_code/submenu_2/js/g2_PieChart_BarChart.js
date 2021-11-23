@@ -32,17 +32,6 @@ function downloadCSV(location, increase){
   document.body.removeChild(downloadLink);
 }
 
-// 기본 날짜 설정
-// let start = document.querySelector('#startDate').value;
-// start = '20200304';
-// start = 2020-03-10;
-// start = '2020-03-10';
-
-// let end = document.querySelector('#endDate').value;
-// end = '20211123';
-// end = 2021-11-22;
-// end = '2021-11-22';
-
 // 파이 차트 삭제 버튼
 Cancel_Plot_Button.addEventListener('click',function(){
   if(document.getElementById('plot_div').childNodes[0]==undefined){
@@ -92,53 +81,66 @@ document.querySelector('#submitBtn').addEventListener('click',()=>{
     document.querySelector('#range2').setAttribute('min', new Date(start).getTime() / 1000);
     document.querySelector('#range2').setAttribute('max', new Date(end).getTime() / 1000);
     document.querySelector('#range2').setAttribute('step', 86400);
-    alert('날짜 범위 수정 적용')
+    // alert('날짜 범위 수정 적용')
   }
 })
 
 
+
+var val;
+let result;
+// 화면에 표시되는 날짜 값 변경
+
+$(document).ready(function() {
+  $('#range').mousemove(function(){
+    val = $(this).val();
+    result =(Unix_timestamp(val));
+    document.querySelector('#div1').innerHTML= result;
+  });
+});
+
+  $(document).ready(function() {
+    $('#range2').mousemove(function(){
+      val = $(this).val();
+      result =(Unix_timestamp(val));
+      document.querySelector('#div2').innerHTML= result;
+    });
+});
+
+
 $(document).ready(function() {
   $('#range').change(function(){
+      
+      dfd.read_csv(`${url}${result.replace(/-/gi,'').slice(2,8)}.csv`)
+        .then(
+          function(data) {
+            const incDec_Length_Except_Sum = data.body__items__item__incDec.data.length-1;
+            const gubun_Length_Except_Sum = data.body__items__item__gubun.data.length-1;
 
-    var val = $(this).val();
-    let result =(Unix_timestamp(val));
+            let df = new dfd.DataFrame({
+              Price: data.body__items__item__incDec.data.slice(0,incDec_Length_Except_Sum),   //표의 맨 아래 합계를 제거한 내용들
+              Location : data.body__items__item__gubun.data.slice(0,gubun_Length_Except_Sum),
+              Type: data.body__items__item__gubun.data.slice(0,gubun_Length_Except_Sum)
+            })
 
-    // 화면에 표시되는 값 변경
-    document.querySelector('#div1').innerHTML= result;
-    
-    dfd.read_csv(`${url}${result.replace(/-/gi,'').slice(2,8)}.csv`)
-      .then(
-        function(data) {
-          const incDec_Length_Except_Sum = data.body__items__item__incDec.data.length-1;
-          const gubun_Length_Except_Sum = data.body__items__item__gubun.data.length-1;
+            document.querySelector('.but').addEventListener('click',()=>downloadCSV(df.Location.data,df.Price.data));
+            df.plot("plot_div").pie({ values: "Price", labels: "Type" })
 
-          let df = new dfd.DataFrame({
-            Price: data.body__items__item__incDec.data.slice(0,incDec_Length_Except_Sum),   //표의 맨 아래 합계를 제거한 내용들
-            Location : data.body__items__item__gubun.data.slice(0,gubun_Length_Except_Sum),
-            Type: data.body__items__item__gubun.data.slice(0,gubun_Length_Except_Sum)
-          })
+          }
+        )
+        .catch(() => {
 
-          document.querySelector('.but').addEventListener('click',()=>downloadCSV(df.Location.data,df.Price.data));
-          df.plot("plot_div").pie({ values: "Price", labels: "Type" })
+          alert('저장된 데이터 이외의 날짜를 클릭했습니다.');
+        })
 
-        }
-      )
-      .catch(() => {
-
-        alert('저장된 데이터 이외의 날짜를 클릭했습니다.');
-      })
-
+    // });
   });
-
 });
 
 
 $(document).ready(function() {
   $('#range2').change(function() {
 
-    var val = $(this).val();
-    let result =(Unix_timestamp(val));
-    document.querySelector('#div2').innerHTML= result;
     dfd.read_csv(`${url}${result.replace(/-/gi, '').slice(2, 8)}.csv`)
       .then(
         function (data) {

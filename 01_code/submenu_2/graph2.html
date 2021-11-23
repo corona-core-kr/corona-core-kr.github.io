@@ -64,79 +64,80 @@
 		<script src="../../templates/subpageMenubar.js" type="text/javascript"></script>
 		<script src="../../templates/supPageController.js" type="text/javascript"></script>
 
-	<!-- 컨텐츠 박스 -->
-	<div class="contents" id="outer_contents">
-		<h1 style="text-align:center"> 일일 확진자수 (지역별) </h1>
-		<br>특정 일자의 지역 별 감염 증감을 보여줍니다<br><br>
-		<div id="inside_contents">
-				<div class="center"><br><b>사용방법</b></div>
-			<p style="padding:5px;line-height:30px;" >
-				1. 시작 종료 날짜를 조정하세요<br>
-				2. 슬라이더로 날짜를 선택하세요<br>
-			</p>
-		</div>
-		
-		<!-- 내부 컨텐츠 시작 -->
-		<div style="background-color:white; border:solid 1px black; border-style:inset;">
-			<br><br>
-			<h2>일일 확진자 발생량 (지역별)</h2>
-
-			<!-- 기간 선택 상자 -->
-			<div class="g3_box1">
-				<h3>기간 선택</h3>
-				● 시작 날짜 &nbsp;
-				<input type="date" id="startDate"><br><br>
-				
-				● 종료 날짜 &nbsp;
-				<input type="date" id="endDate"><br><br>
-				<button style="line-height: 30px; border-radius: 30px;" class="cursorpoint" type="submit" id="submitBtn"> 설정 완료
-					<img src="../../02_img/icon/icon-checked.png" width=15px; alt="삭제 아이콘">
-				</button>
-			</div>
-
-
-			<!-- 파이 차트 상자 -->
-			<div class="g3_box1">
-				<!-- 날짜 표시 div -->
-				<h2 id="div1"></h2>
-				<!-- 설명 -->
-				* 파이 차트 : 확진자 비율을 지역별로 확인할 수 있습니다.<br>
-				<!-- 슬라이더 -->
-				<input id="range" type="range" style="width:50%">
-				<button class="cursorpoint" type="submit" id="cancel_plot" >
-					<img src="../../02_img/icon/icon-bin.png" width=30px; alt="삭제 아이콘">
-				</button>
-				<div id="plot_div"></div>
-			</div>
-
-
-			<!-- 바 차트 상자 -->
-			<div class="g3_box1">
-				<!-- 날짜 표시 div -->
-				<h2 id="div2"></h2>
-				<!-- 설명 -->
-				* 라인 차트 : 확진자 수치를 지역별로 확인할 수 있습니다.<br>
-
-				<!-- 슬라이더 -->
-				<input id="range2" type="range" style="width:50%">
-				<button class="cursorpoint" type="submit" id="cancel_bar">
-					<img src="../../02_img/icon/icon-bin.png" width=30px; alt="삭제 아이콘">
-				</button>
-				<div id="bar_div"></div><br>		
+		<!-- 컨텐츠 박스 -->
+		<div class="contents" id="outer_contents">
+			<h1 style="text-align:center"> 일일 확진자수 (지역별) </h1>
+			<br>특정 일자의 지역 별 감염 증감을 보여줍니다<br><br>
+			<div id="inside_contents">
+					<div class="center"><br><b>사용방법</b></div>
+				<p style="padding:5px;line-height:30px;" >
+					1. 시작 종료 날짜를 조정하세요<br>
+					2. 슬라이더로 날짜를 선택하세요<br>
+				</p>
 			</div>
 			
+			<!-- 내부 컨텐츠 시작 -->
+			<div style="background-color:white; border:solid 1px black; border-style:inset;">
+				<br><br>
+				<h2>일일 확진자 발생량 (지역별)</h2>
 
-			<!-- CSV 버튼 상자 (테두리와 색상은 없음) -->			
-			<div class="g3_box2">
-				<button class="but cursorpoint">
-					<span>download</span><br>
-					<img src="../../02_img/icon/icon-csv.png" width=60px; alt="CSV">
-				</button>
-			</div>
-			<script src="./js/g2_PieChart_BarChart.js" type="module"></script>
-		</div>
-	</div>
-</div>
+				<!-- 기간 선택 상자 -->
+				<div class="g3_box1">
+					<h3>기간 선택</h3>
+					● 시작 날짜 &nbsp;
+					<input type="date" id="startDate"><br><br>
+					
+					● 종료 날짜 &nbsp;
+					<input type="date" id="endDate"><br><br>
+					<button style="line-height: 30px; border-radius: 30px;" class="cursorpoint" type="submit" id="submitBtn"> 설정 완료
+						<img src="../../02_img/icon/icon-checked.png" width=15px; alt="삭제 아이콘">
+					</button>
+				</div>
+
+
+				<!-- 파이 차트 상자 -->
+				<div class="g3_box1">
+					<!-- 날짜 표시 div -->
+					<h2 id="div1"></h2>
+					<!-- 설명 -->
+					* 파이 차트 : 확진자 비율을 지역별로 확인할 수 있습니다.<br>
+					<!-- 슬라이더 -->
+					<input id="range" type="range" style="width:50%">
+					<button class="cursorpoint" type="submit" id="cancel_plot" >
+						<img src="../../02_img/icon/icon-bin.png" width=30px; alt="삭제 아이콘">
+					</button>
+					<div id="plot_div"></div>
+				</div>
+
+
+				<!-- 바 차트 상자 -->
+				<div class="g3_box1">
+					<!-- 날짜 표시 div -->
+					<h2 id="div2"></h2>
+					<!-- 설명 -->
+					* 라인 차트 : 확진자 수치를 지역별로 확인할 수 있습니다.<br>
+
+					<!-- 슬라이더 -->
+					<input id="range2" type="range" style="width:50%">
+					<button class="cursorpoint" type="submit" id="cancel_bar">
+						<img src="../../02_img/icon/icon-bin.png" width=30px; alt="삭제 아이콘">
+					</button>
+					<div id="bar_div"></div><br>		
+				</div>
+				
+
+				<!-- CSV 버튼 상자 (테두리와 색상은 없음) -->			
+				<div class="g3_box2">
+					<button class="but cursorpoint">
+						<span>download</span><br>
+						<img src="../../02_img/icon/icon-csv.png" width=60px; alt="CSV">
+					</button>
+				</div>
+				<script src="./js/g2_PieChart_BarChart.js" type="module"></script>
+			</div> <!-- end of mid box  -->
+		</div> <!-- end of contents box  -->
+	</div> <!-- end of mid box  -->
+	
 	<!-- Footer -->
 	<div id="footer">
 		<script src="../../templates/footer.js"></script>
