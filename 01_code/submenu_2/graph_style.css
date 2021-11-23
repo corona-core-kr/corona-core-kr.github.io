@@ -24,7 +24,8 @@
 }
 
 button{
-  background-color:honeydew;
+  /* background-color:honeydew; */
+  border-radius: 10%;
 }
 
 
@@ -58,4 +59,16 @@ details > summary {
   #outer_contents{
     max-width: 100%;
   }
+}
+
+.LChart{
+  margin:2%;
+  margin-bottom: 60px;
+  /* border:5px black dashed; */
+  border:3px black dotted;
+}
+
+.BChart{
+  margin:2%;
+  border:3px black dotted;
 }

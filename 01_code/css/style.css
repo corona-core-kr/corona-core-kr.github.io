@@ -142,13 +142,18 @@ h2{
 .cursorpoint {cursor:pointer;}
 
 .cursorpoint:hover{	
-	background-color: pink;
+	/* background-color: rgb(171, 248, 248); */
 }
 .cursorpoint:active{
-	background-color: pink;
+	box-shadow:
+	inset 1px 1px 4px 3px black;
+	/* transition: 3s; */
+
 }
 
 .printer:focus{
-	background-color: rgb(245, 123, 166);
-	transition:1s
+	box-shadow:
+	inset 3px 3px 7px 3px black;
+	/* background-color: rgb(0, 255, 255); */
+	/* transition: 3s; */
 }

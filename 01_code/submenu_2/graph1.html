@@ -64,36 +64,36 @@
 				</div><br>
 				
 			<div id="graph_section"><br>
-				<!-- 선 그래프 [출력 - 삭제] -->
-				<h2 style="text-align: center;">라인 차트</h2>
-
-				<img src="../../02_img/icon/icon-lineChart.png" alt="icon-lineChart">
-
-				<div style="text-align: center;"><br>
-					<button class="cursorpoint printer" type="submit" id="lineButton">
-						<img src="../../02_img/icon/icon-printer.png" width=50px; alt="icon-printer">
-					</button>
-					<button class="cursorpoint" type="submit" id="cancelLine">
-						<img src="../../02_img/icon/icon-bin.png" width=50px; alt="icon-bin">
-					</button>    
-				</div><br>
-				<div id="line"></div><br>
-
-				<!-- 막대 그래프 [출력 - 삭제] -->
-				<h2 style="text-align: center;">바 차트</h2>
-
-				<img src="../../02_img/icon/icon-barChart.png" alt="icon-barChart">
+				<!-- 라인 차트 -->
+				<div class="LChart">
+					<h2 style="text-align: center;">라인 차트</h2>
+					<img src="../../02_img/icon/icon-lineChart.png" alt="icon-lineChart">
+					<div style="text-align: center;"><br>
+						<button class="cursorpoint printer" type="submit" id="lineButton">
+							<img src="../../02_img/icon/icon-printer.png" width=50px; alt="icon-printer">
+						</button>
+						<button class="cursorpoint" type="submit" id="cancelLine">
+							<img src="../../02_img/icon/icon-bin.png" width=50px; alt="icon-bin">
+						</button>    
+					</div><br>
+					<div id="line"></div><br>
+				</div>
 
 
-				<div style="text-align: center;"><br>
-					<button class="cursorpoint printer" type="submit" id="barButton">
-						<img src="../../02_img/icon/icon-printer.png" width=50px; alt="icon-printer">
-					</button>
-					<button class="cursorpoint" type="submit" id="cancelBar">
-						<img src="../../02_img/icon/icon-bin.png" width=50px; alt="icon-bin">
-					</button>
-				</div><br>
-				<div id="bar"></div><br>
+				<!-- 바 차트 -->
+				<div class="BChart">
+					<h2 style="text-align: center;">바 차트</h2>
+					<img src="../../02_img/icon/icon-barChart.png" alt="icon-barChart">
+					<div style="text-align: center;"><br>
+						<button class="cursorpoint printer" type="submit" id="barButton">
+							<img src="../../02_img/icon/icon-printer.png" width=50px; alt="icon-printer">
+						</button>
+						<button class="cursorpoint" type="submit" id="cancelBar">
+							<img src="../../02_img/icon/icon-bin.png" width=50px; alt="icon-bin">
+						</button>
+					</div><br>
+					<div id="bar"></div><br>
+				</div>
 
 				<!-- csv 파일 다운로드 -->
 				<div style="text-align:right; margin: 20px;">

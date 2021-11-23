@@ -43,30 +43,35 @@ const startBarChart = function(){
   load().then((value)=>{value.plot('bar').bar();})
 }
 
+// 차트 삭제
 const cancelLineChart = function(){
   if(document.getElementById('line').childNodes[0]==undefined){
-    alert('삭제할 내용이 없어');
+    // alert('삭제할 내용이 없어');
     return 0;
   }
+  // 삭제하기
+  document.querySelector('#line > .plot-container').remove();
 
-  const chart = confirm("Line 차트를 지우겠습니까?");
-  if (chart == false)
-    alert('지우기 취소')
-  else
-    document.querySelector('#line > .plot-container').remove();
+  // const chart = confirm("Line 차트를 지우겠습니까?");
+  // if (chart == false)
+  //   alert('지우기 취소')
+  // else
+  //   document.querySelector('#line > .plot-container').remove();
 }
 
 const cancelBarChart = function(){
   if(document.getElementById('bar').childNodes[0]==undefined){
-    alert('삭제할 내용이 없어');
+    // alert('삭제할 내용이 없어');
     return 0;
   }
+  // 삭제하기
+  document.querySelector('#bar > .plot-container').remove();
 
-  const chart = confirm("Bar 차트를 지우겠습니까?");
-  if (chart == false)
-    alert('지우기 취소')
-  else
-    document.querySelector('#bar > .plot-container').remove();
+  // const chart = confirm("Bar 차트를 지우겠습니까?");
+  // if (chart == false)
+  //   alert('지우기 취소')
+  // else
+  //   document.querySelector('#bar > .plot-container').remove();
 }
 
 
