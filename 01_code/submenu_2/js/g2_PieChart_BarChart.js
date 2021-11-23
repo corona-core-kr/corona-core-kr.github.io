@@ -117,6 +117,10 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('#range1').change(function(){
 
+    val = $(this).val();
+    result =(Unix_timestamp(val));
+    document.querySelector('#div1').innerHTML= result;
+
     dfd.read_csv(`${url}${result.replace(/-/gi,'').slice(2,8)}.csv`)
       .then(
         function(data) {
@@ -142,6 +146,11 @@ $(document).ready(function() {
 // 날짜 별 데이터 받아오기 for LINE_CHART
 $(document).ready(function() {
   $('#range2').change(function() {
+
+    val = $(this).val();
+    result =(Unix_timestamp(val));
+    document.querySelector('#div2').innerHTML= result;
+    
     dfd.read_csv(`${url}${result.replace(/-/gi, '').slice(2, 8)}.csv`)
       .then(
         function (data) {
