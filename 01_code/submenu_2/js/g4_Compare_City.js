@@ -7,6 +7,8 @@ let cityMember=[];
 
 const addEventListener1 = ()=>{
   let isNotDuplicate=true;
+
+  // 존재하는 도시 선택 시 
   cityTitle.childNodes.forEach(Dom=>{
     if(Dom.innerHTML ===`${cityTag.value}`) {
       alert('이미 존재하는 도시입니다');
@@ -14,13 +16,17 @@ const addEventListener1 = ()=>{
     }
   })
 
+  // 
   if(isNotDuplicate) {
     cityTitle.insertAdjacentHTML('beforeend', `<button type="button" id="${cityTag.value}" class="m-1 btn btn-primary">${cityTag.value}</button>`);
     document.querySelector(`#${cityTag.value}`).addEventListener('click', (e) => {
-      if (confirm('삭제하시겠습니까?')) {
-        e.path[0].remove();
-        cityMember.splice(cityMember.indexOf(e.path[0].innerHTML), 1);
-      }
+      e.path[0].remove();
+      cityMember.splice(cityMember.indexOf(e.path[0].innerHTML), 1);
+      // alert('지점 확인')
+      // if (confirm('삭제하시겠습니까?')) {
+      //   e.path[0].remove();
+      //   cityMember.splice(cityMember.indexOf(e.path[0].innerHTML), 1);
+      // }
     })
     cityMember.push(cityTag.value)
   }
