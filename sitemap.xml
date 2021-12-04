@@ -23,19 +23,7 @@
 </url>
 
 
-<!-- submenu1 -->
-<url>
-   <loc>hhttpss://corona-core.com/01_code/submenu_1/01_notice.html</loc>
-   <lastmod>2021-12-04T11:47:37+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
-</url>
-<url>
-   <loc>httpss://corona-core.com/01_code/submenu_1/02_about_us.html</loc>
-   <lastmod>2021-12-04T11:47:37+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
-</url>
+
 
 
 
@@ -74,7 +62,19 @@
 
 
 
-
+<!-- submenu1 -->
+<url>
+   <loc>hhttpss://corona-core.com/01_code/submenu_1/01_notice.html</loc>
+   <lastmod>2021-12-04T11:47:37+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>httpss://corona-core.com/01_code/submenu_1/02_about_us.html</loc>
+   <lastmod>2021-12-04T11:47:37+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
 
 
 <!-- submenu3 -->
