@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- www.check-domains.com sitemap generator -->
+<urlset
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:xhtml="http://www.w3.org/1999/xhtml"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	  	  
+
+
+
+<!-- 인덱스 페이지 -->
+<url>
+   <loc>http://corona-core.com/</loc>
+   <lastmod>2021-12-04T11:47:37+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>1.0000</priority>
+</url>
+<url>
+   <loc>http://corona-core.com/index.html</loc>
+   <lastmod>2021-12-04T11:47:37+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+
+
+<!-- submenu1 -->
+<url>
+   <loc>hhttps://corona-core.com/01_code/submenu_1/01_notice.html</loc>
+   <lastmod>2021-12-04T11:47:37+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://corona-core.com/01_code/submenu_1/02_about_us.html</loc>
+   <lastmod>2021-12-04T11:47:37+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+
+
+
+
+<!-- submenu2 -->
+<url>
+   <loc>https://corona-core.com/01_code/submenu_2/graph1.html</loc>
+   <lastmod>2021-12-04T11:47:37+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.9000</priority>
+</url>
+<url>
+   <loc>https://corona-core.com/01_code/submenu_2/graph2.html</loc>
+   <lastmod>2021-12-04T11:47:37+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.9000</priority>
+</url>
+<url>
+   <loc>https://corona-core.com/01_code/submenu_2/graph3.html</loc>
+   <lastmod>2021-12-04T11:47:37+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.9000</priority>
+</url>
+<url>
+   <loc>https://corona-core.com/01_code/submenu_2/graph4.html</loc>
+   <lastmod>2021-12-04T11:47:37+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.9000</priority>
+</url>
+<url>
+   <loc>https://corona-core.com/01_code/submenu_2/graph5.html</loc>
+   <lastmod>2021-12-04T11:47:37+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.9000</priority>
+</url>
+
+
+
+
+
+
+<!-- submenu3 -->
+<url>
+   <loc>http://corona-core.com/templates/trends-vaccine.html</loc>
+   <lastmod>2021-12-04T11:47:37+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://corona-core.com/01_code/submenu_3/01_corona19.html</loc>
+   <lastmod>2021-12-04T11:47:37+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://corona-core.com/01_code/submenu_3/02_vaccine.html</loc>
+   <lastmod>2021-12-04T11:47:37+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+
+
+
+<!-- submenu4 -->
+<url>
+   <loc>https://corona-core.com/01_code/submenu_3/04_prevention.html</loc>
+   <lastmod>2021-12-04T11:47:37+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://corona-core.com/01_code/submenu_4/03_mask.html</loc>
+   <lastmod>2021-12-04T11:47:37+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://corona-core.com/01_code/submenu_4/03_person_movement.html</loc>
+   <lastmod>2021-12-04T11:47:37+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+</urlset>
+
+
+
+
+
+
