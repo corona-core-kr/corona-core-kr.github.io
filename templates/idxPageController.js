@@ -32,6 +32,7 @@ window.addEventListener('resize', function(event) {
 	if (matchMedia("screen and (max-width: 768px)").matches) {
 		document.getElementById('idxpage_menu_mobile').style.display="block"; // 모바일 뷰 활성화
 		document.getElementById('outer_topMenu').style.display="none"; // PC(소) 뷰 중지
+		document.getElementById('back').style.display="none"; // PC 뷰 중지
 	}
 
 	// PC 중간
@@ -44,8 +45,8 @@ window.addEventListener('resize', function(event) {
 	}
 	// PC 최대
 	if (matchMedia("screen and (min-width: 1500.1px)").matches) {
-		document.getElementById('outer_topMenu').style.display="block"; // PC(소) 뷰 활성화
 		document.getElementById('idxpage_menu_mobile').style.display="none"; // 모바일 뷰 중지
+		document.getElementById('outer_topMenu').style.display="block"; // PC(소) 뷰 활성화
 		document.getElementById('back').style.display="block"; // PC 뷰 활성화
 	}
 }, true);
