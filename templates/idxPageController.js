@@ -44,7 +44,8 @@ window.addEventListener('resize', function(event) {
 	}
 	// PC 최대
 	if (matchMedia("screen and (min-width: 1500.1px)").matches) {
-			document.getElementById('outer_topMenu').style.display="block"; // PC(소) 뷰 활성화
+		document.getElementById('outer_topMenu').style.display="block"; // PC(소) 뷰 활성화
+		document.getElementById('idxpage_menu_mobile').style.display="none"; // 모바일 뷰 중지
 		document.getElementById('back').style.display="block"; // PC 뷰 활성화
 	}
 }, true);
