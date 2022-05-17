@@ -103,7 +103,7 @@ function drawMap(target) {
   let service;
 
   Plot_Button.addEventListener('click',function(){
-    dfd.read_csv(`http://corona-core.com/01_code/submenu_2/Data/Date/${input.value.replace(/-/gi,'').slice(2,8)}.csv`)
+    dfd.read_csv(`http://corona-core-kr.github.io/01_code/submenu_2/Data/Date/${input.value.replace(/-/gi,'').slice(2,8)}.csv`)
       .then(
         function(data) {
           const incDec_Length_Except_Sum = data.body__items__item__incDec.data.length-1;

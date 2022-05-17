@@ -10,13 +10,13 @@
 
 <!-- 인덱스 페이지 -->
 <url>
-   <loc>https://corona-core.com/</loc>
+   <loc>https://corona-core-kr.github.io/</loc>
    <lastmod>2021-12-04T11:47:37+00:00</lastmod>
    <changefreq>daily</changefreq>
    <priority>1.0000</priority>
 </url>
 <url>
-   <loc>https://corona-core.com/index.html</loc>
+   <loc>https://corona-core-kr.github.io/index.html</loc>
    <lastmod>2021-12-04T11:47:37+00:00</lastmod>
    <changefreq>daily</changefreq>
    <priority>0.8000</priority>
@@ -30,31 +30,31 @@
 
 <!-- submenu2 -->
 <url>
-   <loc>httpss://corona-core.com/01_code/submenu_2/graph1.html</loc>
+   <loc>https://corona-core-kr.github.io/01_code/submenu_2/graph1.html</loc>
    <lastmod>2021-12-04T11:47:37+00:00</lastmod>
    <changefreq>daily</changefreq>
    <priority>0.9000</priority>
 </url>
 <url>
-   <loc>httpss://corona-core.com/01_code/submenu_2/graph2.html</loc>
+   <loc>https://corona-core-kr.github.io/01_code/submenu_2/graph2.html</loc>
    <lastmod>2021-12-04T11:47:37+00:00</lastmod>
    <changefreq>daily</changefreq>
    <priority>0.9000</priority>
 </url>
 <url>
-   <loc>httpss://corona-core.com/01_code/submenu_2/graph3.html</loc>
+   <loc>https://corona-core-kr.github.io/01_code/submenu_2/graph3.html</loc>
    <lastmod>2021-12-04T11:47:37+00:00</lastmod>
    <changefreq>daily</changefreq>
    <priority>0.9000</priority>
 </url>
 <url>
-   <loc>httpss://corona-core.com/01_code/submenu_2/graph4.html</loc>
+   <loc>https://corona-core-kr.github.io/01_code/submenu_2/graph4.html</loc>
    <lastmod>2021-12-04T11:47:37+00:00</lastmod>
    <changefreq>daily</changefreq>
    <priority>0.9000</priority>
 </url>
 <url>
-   <loc>httpss://corona-core.com/01_code/submenu_2/graph5.html</loc>
+   <loc>https://corona-core-kr.github.io/01_code/submenu_2/graph5.html</loc>
    <lastmod>2021-12-04T11:47:37+00:00</lastmod>
    <changefreq>daily</changefreq>
    <priority>0.9000</priority>
@@ -64,13 +64,13 @@
 
 <!-- submenu1 -->
 <url>
-   <loc>hhttpss://corona-core.com/01_code/submenu_1/01_notice.html</loc>
+   <loc>hhttps://corona-core-kr.github.io/01_code/submenu_1/01_notice.html</loc>
    <lastmod>2021-12-04T11:47:37+00:00</lastmod>
    <changefreq>monthly</changefreq>
    <priority>0.8000</priority>
 </url>
 <url>
-   <loc>httpss://corona-core.com/01_code/submenu_1/02_about_us.html</loc>
+   <loc>https://corona-core-kr.github.io/01_code/submenu_1/02_about_us.html</loc>
    <lastmod>2021-12-04T11:47:37+00:00</lastmod>
    <changefreq>monthly</changefreq>
    <priority>0.8000</priority>
@@ -79,19 +79,19 @@
 
 <!-- submenu3 -->
 <url>
-   <loc>https://corona-core.com/templates/trends-vaccine.html</loc>
+   <loc>https://corona-core-kr.github.io/templates/trends-vaccine.html</loc>
    <lastmod>2021-12-04T11:47:37+00:00</lastmod>
    <changefreq>monthly</changefreq>
    <priority>0.8000</priority>
 </url>
 <url>
-   <loc>httpss://corona-core.com/01_code/submenu_3/01_corona19.html</loc>
+   <loc>https://corona-core-kr.github.io/01_code/submenu_3/01_corona19.html</loc>
    <lastmod>2021-12-04T11:47:37+00:00</lastmod>
    <changefreq>monthly</changefreq>
    <priority>0.8000</priority>
 </url>
 <url>
-   <loc>httpss://corona-core.com/01_code/submenu_3/02_vaccine.html</loc>
+   <loc>https://corona-core-kr.github.io/01_code/submenu_3/02_vaccine.html</loc>
    <lastmod>2021-12-04T11:47:37+00:00</lastmod>
    <changefreq>monthly</changefreq>
    <priority>0.8000</priority>
@@ -101,19 +101,19 @@
 
 <!-- submenu4 -->
 <url>
-   <loc>httpss://corona-core.com/01_code/submenu_3/04_prevention.html</loc>
+   <loc>https://corona-core-kr.github.io/01_code/submenu_3/04_prevention.html</loc>
    <lastmod>2021-12-04T11:47:37+00:00</lastmod>
    <changefreq>monthly</changefreq>
    <priority>0.8000</priority>
 </url>
 <url>
-   <loc>httpss://corona-core.com/01_code/submenu_4/03_mask.html</loc>
+   <loc>https://corona-core-kr.github.io/01_code/submenu_4/03_mask.html</loc>
    <lastmod>2021-12-04T11:47:37+00:00</lastmod>
    <changefreq>monthly</changefreq>
    <priority>0.8000</priority>
 </url>
 <url>
-   <loc>httpss://corona-core.com/01_code/submenu_4/03_person_movement.html</loc>
+   <loc>https://corona-core-kr.github.io/01_code/submenu_4/03_person_movement.html</loc>
    <lastmod>2021-12-04T11:47:37+00:00</lastmod>
    <changefreq>monthly</changefreq>
    <priority>0.8000</priority>

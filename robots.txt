@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://corona-core.com/sitemap.xml
+Sitemap: https://corona-core-kr.github.io//sitemap.xml
