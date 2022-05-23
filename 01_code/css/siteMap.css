@@ -4,6 +4,7 @@
 	margin-bottom: 100px;
 	text-align: center;
 }
+
 #black_box{
 	box-sizing:border-box;
 	background-color:#4F4F4F;
@@ -42,6 +43,7 @@
 .psedu_mid_box{
 	width:80%;
 	margin: 0 auto;
+  margin-bottom:30px;
 }
 
 .psedu_mid_box>a{
