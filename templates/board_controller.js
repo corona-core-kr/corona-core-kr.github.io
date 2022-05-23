@@ -1,12 +1,9 @@
-
-
 const parent = document.getElementById("board_section");
-const board_mb = document.createElement('div');
-const board_pc = document.createElement('div');
+const board_mb = document.createElement("div");
+const board_pc = document.createElement("div");
 
 // 모바일 상황판 dom 생성하기
-board_mb.innerHTML=
-`
+board_mb.innerHTML = `
 <div id="board-title" class="rounded" >
         <h2 class="Jua main_board">국내 COVID-19 상황판</h2>
     </div>
@@ -15,8 +12,8 @@ board_mb.innerHTML=
     <div class="outer_updates">
         <div class="updates">
             <iframe src="../../crawler/date2.html"
-                width=250
-                height=40 frameborder=0 framespacing=0 marginheight=0 marginwidth=0  vspace=0 scrolling = "no" >
+                width=300
+                height=100 frameborder=0 framespacing=0 marginheight=0 marginwidth=0  vspace=0 scrolling = "no" >
             </iframe>
         </div>
     </div>
@@ -111,8 +108,7 @@ board_mb.innerHTML=
 `;
 
 // PC 상황판 dom 생성하기
-board_pc.innerHTML=
-`
+board_pc.innerHTML = `
 <div id="board-title" class="rounded" >
         <h2 class="Jua main_board">국내 COVID-19 상황판</h2>
     </div>
@@ -121,7 +117,7 @@ board_pc.innerHTML=
     <div class="outer_updates">
         <div class="updates">
             <iframe src="../../crawler/date2.html"
-                width=250
+                width=330
                 height=40 frameborder=0 framespacing=0 marginheight=0 marginwidth=0  vspace=0 scrolling = "no" >
             </iframe>
         </div>
@@ -219,33 +215,30 @@ board_pc.innerHTML=
 // ㄴ DOM 요소 생성 완료
 
 // 상황판 최초 출력
-if (matchMedia("screen and (max-width: 768px)").matches){
-    document.getElementById('board_section').appendChild(board_mb);
+if (matchMedia("screen and (max-width: 768px)").matches) {
+  document.getElementById("board_section").appendChild(board_mb);
 } else {
-    document.getElementById('board_section').appendChild(board_pc);
+  document.getElementById("board_section").appendChild(board_pc);
 }
 
 // 뷰포트 변화 시마다 삭제+출력
-window.addEventListener('resize', function(event) {
-	// 모바일 
-	if (matchMedia("screen and (max-width: 768.1px)").matches) {
+window.addEventListener(
+  "resize",
+  function (event) {
+    // 모바일
+    if (matchMedia("screen and (max-width: 768.1px)").matches) {
+      // PC dom 삭제
+      parent.removeChild(board_pc);
 
-        // PC dom 삭제
-        parent.removeChild(board_pc); 
+      // 모바일 dom 활성화
+      parent.appendChild(board_mb);
+    } else {
+      // 모바일 dom 삭제
+      parent.removeChild(board_mb);
 
-        // 모바일 dom 활성화
-        parent.appendChild(board_mb); 
-    } 
-    else {
-        // 모바일 dom 삭제
-        parent.removeChild(board_mb); 
-        
-        // PC dom 활성화
-        parent.appendChild(board_pc); 
-
+      // PC dom 활성화
+      parent.appendChild(board_pc);
     }
-}, true);
-
-
-
-
+  },
+  true
+);

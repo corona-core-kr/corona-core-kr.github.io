@@ -47,29 +47,29 @@ let menuSpecs2 = `
       <div>입력한 확진자 수치를 넘긴 날짜를 검색합니다</div>
     </div>
 
-    <div id="black_box"><b>방역 정보</b></div>
-    <div class="left-title-box">
-      <div class="each-LTB"><a href="01_code/submenu_3/01_corona19.html" class="indexLink">코로나 정보</a></div>
-      <div class="each-LTB"><a href="01_code/submenu_3/02_vaccine.html" class="indexLink">백신 정보</a></div>
-      <div class="each-LTB"><a href="01_code/submenu_3/04_prevention.html" class="indexLink">행동 수칙</a></div>
-    </div>
-    <div class="right-desc-box">
-      <div>코로나 바이러스 정보를 제공합니다</div>
-      <div>코로나 백신 정보를 제공합니다</div>
-      <div>기본적인 에방 행동 수칙을 확인할 수 있습니다 </div>
-    </div>
+              <div id="black_box"><b>방역 정보</b></div>
+              <div class="left-title-box">
+                <div class="each-LTB"><a href="01_code/submenu_3/01_corona19.html" class="indexLink">코로나 정보</a></div>
+                <div class="each-LTB"><a href="01_code/submenu_3/02_vaccine.html" class="indexLink">백신 정보</a></div>
+                <div class="each-LTB"><a href="01_code/submenu_3/04_prevention.html" class="indexLink">행동 수칙</a></div>
+              </div>
+              <div class="right-desc-box">
+                <div>코로나 바이러스 정보를 제공합니다</div>
+                <div>코로나 백신 정보를 제공합니다</div>
+                <div>기본적인 에방 행동 수칙을 확인할 수 있습니다 </div>
+              </div>
 
-    <div id="black_box"><b>정부 정책</b></div>
-    <div class="left-title-box">
-      <div class="each-LTB"><a href="01_code/submenu_4/01_policy.html" class="indexLink">사회적 거리두기 정책</a></div>
-      <div class="each-LTB"><a href="01_code/submenu_4/03_person_movement.html" class="indexLink">확진자 동선</a></div>
-      <div class="each-LTB"><a href="01_code/submenu_4/03_mask.html" class="indexLink">마스크 착용안</a></div>
-    </div>
-    <div class="right-desc-box">
-      <div>지역별 확진자 동선 링크를 제공합니다</div>
-      <div>전체/단계별 사회적 거리두기 정책 안내</div>
-      <div>마스크 착용 방칙과 위반 시 과태료 안내</div>
-    </div>
+              <div id="black_box"><b>정부 정책</b></div>
+              <div class="left-title-box">
+                <div class="each-LTB"><a href="01_code/submenu_4/01_policy.html" class="indexLink">사회적 거리두기 정책</a></div>
+                <div class="each-LTB"><a href="01_code/submenu_4/03_person_movement.html" class="indexLink">확진자 동선</a></div>
+                <div class="each-LTB"><a href="01_code/submenu_4/03_mask.html" class="indexLink">마스크 착용안</a></div>
+              </div>
+              <div class="right-desc-box">
+                <div>지역별 확진자 동선 링크를 제공합니다</div>
+                <div>전체/단계별 사회적 거리두기 정책 안내</div>
+                <div>마스크 착용 방칙과 위반 시 과태료 안내</div>
+              </div>
 
 </div>
 `;

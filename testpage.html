@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="division1">
+    division1
+  </div>
+  <div id="division2">
+    division2
+  </div>
+</body>
+</html>
+
+<script>
+
+
+  // document.title = "Hi";
+  // console.log(document.body);
+
+  // const title = document.getElementById("title"); // title이라는 id를 가진 요소를 찾아서 반환
+  // title.innerText = "Hello!";
+
+  function handleResize(event){
+    console.log("사이즈변경 핸들러 호출 : ", event);
+  }
+  window.addEventListener("resize", handleResize); // ("이벤트이름", 호출될함수)
+
+  
+  
+  const div1 = document.querySelector("#division1");
+  const div2 = document.querySelector("#division2");
+  function handleClick(e){
+    console.log("클릭 핸들러 호출 : ", e);
+    e.target.style.color="red"
+  }
+  div1.addEventListener("click", handleClick);
+  div2.addEventListener("click", handleClick);
+
+</script>
